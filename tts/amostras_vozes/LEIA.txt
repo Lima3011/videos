@@ -1,0 +1,11 @@
+Amostras de vozes do Coqui XTTS-v2 (locutor pronto da biblioteca do modelo, sem
+clonagem) — mesma frase em cada arquivo, pra comparar qual soa mais natural.
+
+Frase: "Dez vagas de estacionamento serão ocupadas por seis carros, sendo três
+pretos, dois vermelhos e um branco."
+
+Pra usar a escolhida no projeto:
+  XTTS_SPEAKER="Nome Completo" python tts/xtts_audio.py roteiros/<id>.json
+
+Nomes testados aqui: Luis Moray, Ferran Simen, Damien Black, Craig Gutsy,
+Xavier Hayasaka, Marcos Rudaski.
