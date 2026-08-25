@@ -1,0 +1,17 @@
+# Narração — afa-2018-q19
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Questão dezenove da AFA de dois mil e dezoito, de análise combinatória.
+
+[2] Dez vagas de estacionamento serão ocupadas por seis carros, sendo três pretos, dois vermelhos e um branco. Duas disposições só se distinguem pela cor. De quantas maneiras os seis carros podem ocupar as dez vagas? As alternativas são estas. Opção á, doze mil e seiscentos. Opção b, dezesseis mil e duzentos. Opção c, vinte e um mil e seiscentos. Opção d, vinte e seis mil e cem.
+
+[3] Pense assim, são dez posições a preencher. Três com carro preto, duas com vermelho, uma com branco, e quatro vagas ficam vazias.
+
+[4] Como carros da mesma cor são indistinguíveis, e as vagas vazias também, é uma permutação com repetição das dez posições.
+
+[5] O total é dez fatorial dividido pelos fatoriais de cada grupo repetido, três, dois, um e quatro.
+
+[6] No numerador, dez fatorial, que é esse valor grande. No denominador, seis vezes dois vezes um vezes vinte e quatro, que dá duzentos e oitenta e oito.
+
+[7] A divisão dá doze mil e seiscentos. Alternativa á.
+

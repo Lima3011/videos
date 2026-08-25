@@ -1,0 +1,45 @@
+{
+  "id": "afa-2018-q19",
+  "banca": "AFA",
+  "ano": 2018,
+  "ordem": 19,
+  "assunto": "Análise combinatória",
+  "sub": "permutação com repetição",
+  "gabarito": "A",
+  "alternativas": {"a": "12 600", "b": "16 200", "c": "21 600", "d": "26 100"},
+
+  "validacao": {
+    "tipo": "expressao",
+    "expr": "factorial(10) / (factorial(3)*factorial(2)*factorial(1)*factorial(4))",
+    "esperado": 12600,
+    "alternativa_calculada": "a"
+  },
+
+  "passos": [
+    {"acao": "titulo", "texto": "AFA 2018 — Questão 19",
+     "subtitulo": "Análise combinatória · permutação com repetição",
+     "narracao": "Questão dezenove da AFA de dois mil e dezoito, de análise combinatória."},
+
+    {"acao": "enunciado",
+     "texto": "Dez vagas de um estacionamento serão ocupadas por seis carros: 3 pretos, 2 vermelhos e 1 branco. Considerando que uma maneira se distingue de outra apenas pela cor dos carros, o total de possibilidades de os seis carros ocuparem as dez vagas é igual a:",
+     "alternativas": "a) 12 600      b) 16 200      c) 21 600      d) 26 100",
+     "narracao": "Dez vagas de estacionamento serão ocupadas por seis carros, sendo três pretos, dois vermelhos e um branco. Duas disposições só se distinguem pela cor. De quantas maneiras os seis carros podem ocupar as dez vagas? As alternativas são estas. Opção á, doze mil e seiscentos. Opção b, dezesseis mil e duzentos. Opção c, vinte e um mil e seiscentos. Opção d, vinte e seis mil e cem."},
+
+    {"acao": "escrever", "latex": "\\text{10 posições: 3 pretos, 2 vermelhos, 1 branco, 4 vazias}",
+     "narracao": "Pense assim, são dez posições a preencher. Três com carro preto, duas com vermelho, uma com branco, e quatro vagas ficam vazias."},
+
+    {"acao": "escrever", "latex": "\\text{itens iguais entre si} \\Rightarrow \\text{permutação com repetição}",
+     "destaque": true, "nota": "vagas vazias também repetem",
+     "narracao": "Como carros da mesma cor são indistinguíveis, e as vagas vazias também, é uma permutação com repetição das dez posições."},
+
+    {"acao": "escrever", "latex": "N = \\frac{10!}{3!\\,\\cdot\\,2!\\,\\cdot\\,1!\\,\\cdot\\,4!}",
+     "narracao": "O total é dez fatorial dividido pelos fatoriais de cada grupo repetido, três, dois, um e quatro."},
+
+    {"acao": "escrever", "latex": "N = \\frac{3\\,628\\,800}{6 \\cdot 2 \\cdot 1 \\cdot 24} = \\frac{3\\,628\\,800}{288}",
+     "narracao": "No numerador, dez fatorial, que é esse valor grande. No denominador, seis vezes dois vezes um vezes vinte e quatro, que dá duzentos e oitenta e oito."},
+
+    {"acao": "resposta", "latex": "N = 12\\,600",
+     "alternativa": "a",
+     "narracao": "A divisão dá doze mil e seiscentos. Alternativa á."}
+  ]
+}

@@ -1,0 +1,26 @@
+# segredos
+.env
+*.env
+!.env.example
+
+# saidas geradas (video/audio renderizado, cache do manim/python)
+media/
+**/media/
+tts/audio/
+tts/audio_fish_teste/
+_check_domino/
+_check_new/
+testes/
+vinheta/
+__pycache__/
+*.pyc
+*.pyo
+
+# arquivos pessoais/temporarios que nao deveriam ser versionados
+*.mp4
+!vinheta_exemplo.mp4
+.DS_Store
+Thumbs.db
+
+# configuracao local do editor/agente
+.claude/settings.local.json

@@ -1,0 +1,15 @@
+# Setup completo (multiplataforma, detecta CUDA/CPU sozinho): rode setup.sh
+# (Linux/macOS) ou setup.ps1 (Windows) na raiz do projeto — ver README.md.
+#
+# Este arquivo é só a lista pip; ele PRESSUPÕE que torch/torchaudio já foram
+# instalados antes (é o que os scripts de setup fazem — a versão certa de
+# torch depende de GPU/SO, então não dá pra fixar aqui). Se for instalar na
+# mão: instale torch==2.8.0 primeiro (ver README.md, seção "Instalação
+# manual"), senão o pip baixa a build CUDA mais pesada por padrão.
+#
+# transformers é fixado porque o coqui-tts 0.27.5 quebra em transformers 5.x
+# (função removida/renomeada); manim/sympy não precisam de pin.
+manim
+sympy
+coqui-tts
+transformers==4.57.6
