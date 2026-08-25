@@ -1,0 +1,20 @@
+{
+  "id": "recorrencia-06-conclusao",
+  "banca": "GERAL", "ano": 2026, "ordem": 6, "assunto": "Recorrência", "sub": "conclusão",
+  "passos": [
+    {"acao": "titulo", "texto": "Uma ideia, três disfarces",
+     "narracao": "Recapitulando os três problemas de hoje."},
+
+    {"acao": "escrever", "latex": "f(n) = f(n-1) + f(n-2)", "nota": "dominó 2×n",
+     "narracao": "O dominó, cobrindo um tabuleiro dois por n, escondia a mesma regra de Fibonacci."},
+
+    {"acao": "escrever", "latex": "T(n) = 2\\cdot T(n-1) + 1 \\;=\\; 2^n - 1", "nota": "torre de Hanói",
+     "narracao": "A torre de Hanói tinha uma recorrência parecida, mas que dobra a cada passo, resultando numa fórmula exponencial."},
+
+    {"acao": "escrever", "latex": "\\binom{n}{4} + \\binom{n}{2} + 1", "nota": "círculos de Moser",
+     "narracao": "E os círculos de Moser nos lembraram que nem todo padrão bonito nos primeiros casos é, de fato, verdadeiro pra sempre."},
+
+    {"acao": "escrever", "latex": "\\text{o caso } n \\text{ depende do caso } n-1\\text{?}", "destaque": true,
+     "narracao": "Da próxima vez que você encontrar um problema de contagem, faça essa pergunta, será que o caso n depende de algum caso anterior? Se a resposta for sim, você já tem metade da solução em mãos."}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "recorrencia-04-hanoi",
+  "banca": "GERAL", "ano": 2026, "ordem": 4, "assunto": "Recorrência", "sub": "torre de Hanói",
+  "passos": [
+    {"acao": "titulo", "texto": "Problema 2", "subtitulo": "a torre de Hanói",
+     "narracao": "Segundo problema, um clássico, a torre de Hanói."},
+
+    {"acao": "enunciado",
+     "texto": "3 pinos, e n discos de tamanhos diferentes empilhados no primeiro, do maior embaixo pro menor em cima. Cada movimento leva 1 disco pra outro pino, e nunca um disco maior pode ficar em cima de um menor. Objetivo, levar a torre inteira pro terceiro pino.",
+     "narracao": "Três pinos, e n discos de tamanhos diferentes empilhados no primeiro pino, do maior embaixo pro menor em cima. A regra, cada movimento leva um disco de um pino pra outro, e nunca dá pra colocar um disco maior em cima de um disco menor. O objetivo é levar a torre inteira pro terceiro pino."},
+
+    {"acao": "anim_hanoi", "n_discos": 4,
+     "narracao": "Veja a solução em ação. Repare a estratégia, pra mover os n discos, primeiro tira-se os n menos um discos de cima do caminho, movendo eles pro pino do meio. Depois, move-se o disco maior, sozinho, direto pro pino final. E por fim, os n menos um discos voltam a se empilhar em cima dele."},
+
+    {"acao": "escrever", "latex": "T(n) = 2\\cdot T(n-1) + 1", "destaque": true,
+     "nota": "número mínimo de movimentos",
+     "narracao": "Traduzindo em fórmula, T de n, o número mínimo de movimentos, é duas vezes T de n menos um, mais um. Duas vezes porque os n menos um discos menores precisam ser resolvidos duas vezes, uma pra sair do caminho, outra pra se reempilhar. E mais um, pelo movimento único do disco maior."},
+
+    {"acao": "transformar", "latex": "T(n) + 1 = 2\\big(T(n-1) + 1\\big)", "operacao": "soma 1 nos dois lados",
+     "narracao": "Um truque comum pra resolver esse tipo de recorrência, somar um dos dois lados. Assim, T de n mais um vira exatamente o dobro de T de n menos um mais um."},
+
+    {"acao": "escrever", "latex": "T(1) = 1 \\quad\\Longrightarrow\\quad T(1) + 1 = 2",
+     "narracao": "Falta só o caso base pra fechar a conta. Com um disco só, basta um movimento. Então T de um mais um vale dois."},
+
+    {"acao": "escrever", "latex": "T(n) + 1 = 2^n \\quad\\Longrightarrow\\quad T(n) = 2^n - 1",
+     "destaque": true, "nota": "fórmula fechada",
+     "narracao": "Como T de n mais um começa em dois, e dobra a cada passo, depois de n menos um duplicações ele vale dois vezes dois elevado a n menos um, ou seja, dois elevado a n. Isolando T de n, chegamos na fórmula fechada, dois elevado a n, menos um."},
+
+    {"acao": "escrever", "latex": "T(4) = 2^4 - 1 = 15 \\text{ movimentos}",
+     "nota": "confere com a animação",
+     "narracao": "Vale a pena conferir com a animação que acabamos de ver. Com quatro discos, a fórmula dá dois elevado a quatro, menos um, quinze movimentos. Se você contar os movimentos da simulação, é exatamente esse o total."},
+
+    {"acao": "escrever", "latex": "n = 20 \\;\\Rightarrow\\; T(20) = 1\\,048\\,575 \\text{ movimentos}",
+     "narracao": "Pra vinte discos, seriam mais de um milhão de movimentos. Uma lenda diz que monges resolvendo essa torre com sessenta e quatro discos, um movimento por segundo, levariam mais tempo do que a idade do universo."}
+  ]
+}

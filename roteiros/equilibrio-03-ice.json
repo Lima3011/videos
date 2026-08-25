@@ -1,0 +1,39 @@
+{
+  "id": "equilibrio-03-ice",
+  "banca": "GERAL", "ano": 2026, "ordem": 3,
+  "assunto": "Equilíbrio químico", "sub": "tabela ICE (início, reage, equilíbrio)",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "A tabela ICE", "subtitulo": "início · reage · equilíbrio",
+     "narracao": "Agora o método que resolve quase toda conta de equilíbrio. Ele tem três linhas e é sempre o mesmo, independente da reação."},
+
+    {"acao": "escrever", "latex": "\\mathrm{H_2}(g) + \\mathrm{I_2}(g) \\;\\rightleftharpoons\\; 2\\,\\mathrm{HI}(g)",
+     "narracao": "Vamos usar a formação do iodeto de hidrogênio, que é a reação da questão mais difícil do vídeo. Um hidrogênio mais um iodo formando dois iodetos de hidrogênio."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["", "H2", "I2", "HI"],
+     "linhas": [
+       ["início", "1,0", "1,0", "0"],
+       ["reage", "-x", "-x", "+2x"],
+       ["equilíbrio", "1,0-x", "1,0-x", "2x"]
+     ],
+     "destacar_coluna": 3,
+     "narracao": "A primeira linha é o que você colocou no frasco. A segunda é quanto reagiu, e é aqui que mora a ideia, você não sabe esse valor, então chama de x. A terceira linha é a soma das duas primeiras. Repare no detalhe mais importante. O x aparece multiplicado pelo coeficiente, então o produto ganha dois x, e não x, porque o coeficiente dele é dois."},
+
+    {"acao": "escrever", "latex": "\\text{quanto reage é proporcional ao COEFICIENTE}",
+     "destaque": true, "nota": "erro clássico de prova",
+     "narracao": "Se você esquecer esse dois, a conta inteira desanda. É o erro mais cobrado nesse tipo de questão."},
+
+    {"acao": "escrever", "latex": "K_c = \\frac{(2x)^{2}}{(1{,}0-x)(1{,}0-x)}",
+     "narracao": "Com a última linha pronta, é só jogar dentro da constante. Dois x ao quadrado em cima, e o produto dos dois reagentes embaixo. Sobra uma equação com uma incógnita só."},
+
+    {"acao": "escrever", "latex": "\\alpha = \\frac{\\text{quantidade que reagiu}}{\\text{quantidade inicial}}",
+     "destaque": true, "nota": "grau de equilíbrio",
+     "narracao": "E quando a questão fala em grau de equilíbrio, ou grau de dissociação, é só isso. É o x dividido pelo que você tinha no início, normalmente escrito em porcentagem. Vinte por cento de dissociação com um mol inicial quer dizer x igual a zero vírgula dois."},
+
+    {"acao": "escrever", "latex": "\\text{a mesma tabela vale em PRESSÃO}",
+     "narracao": "Uma última observação que vale ouro em prova de ITA. Se o enunciado der pressões em vez de concentrações, a tabela é exatamente a mesma, só que com pressões parciais, e a constante passa a se chamar K p."}
+  ]
+}

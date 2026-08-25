@@ -1,0 +1,21 @@
+# Narração — probabilidade-06-q2-espcex-dados
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Segunda questão, EsPCEx de dois mil e vinte. Agora a probabilidade condicional entra em ação.
+
+[2] Dois dados não viciados, um azul e outro vermelho, numerados de um a seis, são lançados. Qual a probabilidade da soma dar sete, sabendo que no dado azul saiu um número par? Opção a, um doze avos. Opção b, um meio. Opção c, um sexto. Opção d, um terço. Opção e, um dezoito avos.
+
+[3] A palavra sabendo-se que é a senha. Isso é probabilidade condicional, e a estratégia mais rápida é encolher o espaço amostral para os casos em que a condição já é verdade.
+
+[4] A condição é o dado azul dar par. Isso restringe o dado azul a três valores possíveis, dois, quatro ou seis.
+
+[5] Com o azul travado em três valores, e o vermelho livre para valer qualquer um dos seis, o novo espaço amostral, considerando só os casos em que a condição vale, tem dezoito pares possíveis.
+
+[6] Agora, dentro desses dezoito, quais pares somam sete? Para cada valor par do azul, existe exatamente um valor do vermelho que completa a soma sete. Azul dois com vermelho cinco, azul quatro com vermelho três, azul seis com vermelho um.
+
+[7] São três pares favoráveis dentro do novo espaço amostral de dezoito.
+
+[8] Três sobre dezoito, simplificando, dá um sexto.
+
+[9] Um sexto. Alternativa C.
+

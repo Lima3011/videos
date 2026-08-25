@@ -1,0 +1,56 @@
+{
+  "id": "faraday-02-fluxo-e-lei",
+  "banca": "GERAL", "ano": 2026, "ordem": 2,
+  "assunto": "Lei de Faraday", "sub": "fluxo magnético, a Lei de Faraday e a Lei de Lenz",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Fluxo magnético e Lei de Faraday", "subtitulo": "a grandeza que decide se existe corrente",
+     "narracao": "Antes de falar em indução, precisamos de uma grandeza que meça quanto campo magnético atravessa um circuito. Essa grandeza é o fluxo magnético, e ela é a verdadeira protagonista de toda essa história."},
+
+    {"acao": "escrever", "latex": "\\Phi_B = B\\,A\\cos\\theta", "destaque": true,
+     "nota": "unidade weber, Wb",
+     "narracao": "Para um campo magnético uniforme atravessando uma superfície plana de área A, com a normal fazendo um ângulo teta com o campo, o fluxo vale B vezes A vezes cosseno de teta. A unidade no sistema internacional é o weber."},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "segmento", "x1": -1.8, "y1": 0, "x2": 1.8, "y2": 0, "cor": "giz"},
+       {"tipo": "texto", "x": 0, "y": -0.45, "texto": "área A", "cor": "giz", "tamanho": 22},
+       {"tipo": "seta", "x1": 0, "y1": 0, "x2": 0, "y2": 1.6, "cor": "destaque"},
+       {"tipo": "texto", "x": 0.3, "y": 1.78, "texto": "n", "cor": "destaque", "tamanho": 24},
+       {"tipo": "seta", "x1": 0, "y1": 0, "x2": 1.15, "y2": 1.55, "cor": "apoio"},
+       {"tipo": "texto", "x": 1.42, "y": 1.65, "texto": "B", "cor": "apoio", "tamanho": 24},
+       {"tipo": "texto", "x": 0.32, "y": 1.15, "texto": "θ", "cor": "nota", "tamanho": 22}
+     ],
+     "narracao": "Pense no fluxo como a quantidade de linhas de campo atravessando o circuito. A reta horizontal representa o plano do circuito visto de lado, o vetor normal sai perpendicular a esse plano, e teta é o ângulo entre essa normal e o campo B."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["o que muda", "exemplo típico"],
+     "linhas": [
+       ["o módulo de B", "o ímã se aproxima ou se afasta"],
+       ["a área A do circuito", "uma barra desliza sobre trilhos"],
+       ["o ângulo θ", "o circuito gira, como num gerador"]
+     ],
+     "narracao": "O fluxo pode mudar por três motivos, e é importante ter isso muito claro. O módulo do campo pode mudar, como quando um ímã se aproxima. A área do circuito pode mudar, como quando uma barra desliza sobre trilhos. E o ângulo pode mudar, como quando o circuito gira, igual acontece dentro de um gerador."},
+
+    {"acao": "escrever", "latex": "\\text{cuidado, } B \\text{ pode ser constante, quem varia é a área}", "destaque": true,
+     "nota": "armadilha clássica de prova",
+     "narracao": "Aqui vai um alerta importante. Muita gente, na hora da prova, só lembra que o fluxo muda quando o campo muda. Mas em vários problemas, principalmente o da barra sobre trilhos, o campo é constante. Quem varia é a área da espira. É o mesmo fenômeno, só que disfarçado."},
+
+    {"acao": "escrever", "latex": "\\text{campo parado} \\;\\Rightarrow\\; \\text{nenhuma força organizada}",
+     "narracao": "E por que um campo constante não gera corrente? Porque gerar corrente custa energia, e não existe fonte de energia nenhuma numa situação em que nada se move. Uma carga só sente força de um campo magnético quando está em movimento, ou quando existe um campo elétrico induzido. Parado, o campo simplesmente não tem como empurrar as cargas livres."},
+
+    {"acao": "escrever", "latex": "\\mathcal{E} = -\\dfrac{d\\Phi_B}{dt}", "destaque": true,
+     "nota": "Lei de Faraday-Lenz",
+     "narracao": "Só quando o fluxo varia é que aparece uma força eletromotriz induzida, representada pela letra E maiúscula. Essa é a Lei de Faraday-Lenz. A força eletromotriz induzida é igual a menos a taxa de variação do fluxo magnético no tempo, e ela se comporta como uma pilha temporária, medida em volts."},
+
+    {"acao": "escrever", "latex": "\\text{corrente induzida sempre se opõe à variação de fluxo}", "destaque": true,
+     "nota": "Lei de Lenz, o papel do sinal negativo",
+     "narracao": "O sinal negativo não é um detalhe decorativo, ele carrega dentro de si a Lei de Lenz. Se o fluxo está aumentando, a corrente induzida cria seu próprio campo contrário a esse aumento, tentando segurar o fluxo. Se o fluxo está diminuindo, a corrente tenta reforçá-lo. O sistema sempre reage contra a mudança que está sofrendo."},
+
+    {"acao": "escrever", "latex": "\\text{se favorecesse a variação} \\;\\Rightarrow\\; \\text{energia do nada}",
+     "nota": "por que a natureza resiste",
+     "narracao": "E por que a natureza insiste em resistir à variação? Porque isso é, na verdade, uma manifestação da conservação de energia. Se a corrente induzida favorecesse a variação de fluxo em vez de se opor a ela, o sistema entraria num ciclo de retroalimentação positiva, gerando energia do nada, um moto contínuo. Como isso é proibido pela física, a natureza é obrigada a fazer o contrário, resistir à mudança, consumindo energia externa no processo."}
+  ]
+}

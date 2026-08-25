@@ -1,0 +1,15 @@
+# Narração — probabilidade-04-uniao-complementar
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Faltam duas ferramentas, e uma delas vai resolver sozinha a questão mais difícil do vídeo.
+
+[2] A primeira é a regra da união. A probabilidade de A ou B é a soma das probabilidades, menos a intersecção. Subtraímos a intersecção porque, ao somar P de A com P de B, os casos em que os dois acontecem juntos foram contados duas vezes.
+
+[3] Se os eventos são mutuamente exclusivos, ou seja, não podem acontecer ao mesmo tempo, a intersecção é vazia e a regra vira uma soma direta. Tirar um rei ou uma dama do baralho, por exemplo, nunca acontecem juntos numa carta só.
+
+[4] A segunda ferramenta é o evento complementar. A probabilidade de A mais a probabilidade de A não acontecer soma sempre um. Então, se P de A é difícil de calcular direto, calcule a probabilidade do complementar e subtraia de um.
+
+[5] E aqui vai a dica mais valiosa do vídeo. Toda vez que a questão pedir pelo menos um, ou pelo menos uma vez, é quase sempre mais fácil calcular o complementar, nenhum, e fazer um menos esse valor. Calcular pelo menos um direto exige somar um monte de casos, calcular nenhum é uma conta só.
+
+[6] Um exemplo rápido. A chance de sair pelo menos uma cara em n moedas é um, menos a chance de todas darem coroa. É exatamente essa lógica que resolve a questão do ITA que vem a seguir.
+

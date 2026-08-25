@@ -1,0 +1,63 @@
+{
+  "id": "faraday-05-q2-barra-trilhos",
+  "banca": "Inédita (nível ITA/IME)", "ano": 2026, "ordem": 5,
+  "assunto": "Lei de Faraday", "sub": "barra condutora caindo sobre trilhos verticais",
+  "gabarito": "A", "alternativas": {"a": "v_T = 5 m/s"},
+  "validacao": {"tipo": "expressao", "expr": "((5/100)*10*(1/10)) / ((1/2)**2 * (1/5)**2)", "esperado": 5, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 2", "subtitulo": "barra sobre trilhos verticais · nível ITA/IME",
+     "narracao": "Segunda questão, agora sem alternativas, o clássico problema da barra sobre trilhos, nível ITA e IME."},
+
+    {"acao": "enunciado",
+     "texto": "Barra condutora PQ, comprimento l, massa m, desliza sem atrito sobre dois trilhos verticais paralelos ligados no topo por um resistor R. Campo B uniforme, perpendicular ao plano dos trilhos, entrando na página. A barra é abandonada em repouso e cai. Dados: m=50g, l=20cm, B=0,5T, R=0,1Ω, g=10m/s².",
+     "narracao": "Uma barra condutora P Q, de comprimento l e massa m, desliza sem atrito verticalmente sobre dois trilhos condutores paralelos, ligados no topo por um resistor de resistência R. Todo o conjunto está imerso num campo magnético uniforme B, perpendicular ao plano dos trilhos e entrando na página. A barra é abandonada em repouso e passa a cair. Os dados são massa de cinquenta gramas, comprimento de vinte centímetros, campo de zero vírgula cinco tesla, resistência de zero vírgula um ohm, e gravidade de dez metros por segundo ao quadrado."},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "segmento", "x1": -1.2, "y1": -2, "x2": -1.2, "y2": 2, "cor": "giz"},
+       {"tipo": "segmento", "x1": 1.2, "y1": -2, "x2": 1.2, "y2": 2, "cor": "giz"},
+       {"tipo": "segmento", "x1": -1.2, "y1": 2, "x2": 1.2, "y2": 2, "cor": "giz"},
+       {"tipo": "texto", "x": 0, "y": 2.35, "texto": "R", "cor": "giz", "tamanho": 22},
+       {"tipo": "segmento", "x1": -1.2, "y1": 0, "x2": 1.2, "y2": 0, "cor": "destaque"},
+       {"tipo": "texto", "x": -1.45, "y": 0, "texto": "P", "cor": "destaque", "tamanho": 20},
+       {"tipo": "texto", "x": 1.45, "y": 0, "texto": "Q", "cor": "destaque", "tamanho": 20},
+       {"tipo": "texto", "x": -0.55, "y": 0.9, "texto": "×", "cor": "apoio", "tamanho": 24},
+       {"tipo": "texto", "x": 0.55, "y": 0.9, "texto": "×", "cor": "apoio", "tamanho": 24},
+       {"tipo": "texto", "x": -0.55, "y": -0.9, "texto": "×", "cor": "apoio", "tamanho": 24},
+       {"tipo": "seta", "x1": 0, "y1": -0.35, "x2": 0, "y2": -1.15, "cor": "nota"},
+       {"tipo": "texto", "x": 0.3, "y": -0.75, "texto": "v", "cor": "nota", "tamanho": 20},
+       {"tipo": "seta", "x1": 0, "y1": 0.35, "x2": 0, "y2": 0.95, "cor": "destaque"},
+       {"tipo": "texto", "x": 0.3, "y": 0.65, "texto": "F", "cor": "destaque", "tamanho": 20}
+     ],
+     "narracao": "Este é o esquema. Dois trilhos verticais ligados por um resistor no topo, a barra P Q na horizontal apoiada sobre eles, o campo entrando na página, marcado pelos xis, a barra caindo com velocidade v, e a força magnética F que vamos calcular, sempre apontando contra o movimento."},
+
+    {"acao": "escrever", "latex": "\\text{barra cai} \\;\\Rightarrow\\; \\text{área aumenta} \\Rightarrow \\Phi \\text{ aumenta}",
+     "nota": "parte a, sentido da corrente",
+     "narracao": "Primeira pergunta, o sentido da corrente. Enquanto a barra cai, ela se afasta do resistor lá em cima, e a área do circuito fechado aumenta. Como o campo é constante e entra na página, o fluxo entrando na página está aumentando."},
+
+    {"acao": "escrever", "latex": "\\text{campo induzido sai da página} \\Rightarrow \\text{sentido anti-horário}",
+     "destaque": true,
+     "narracao": "Pela Lei de Lenz, a corrente induzida se opõe a esse aumento, criando um campo induzido que sai da página dentro da espira. Pela regra da mão direita, isso é uma corrente em sentido anti-horário, ou seja, na barra a corrente flui de Q para P, e retorna pelo resistor no sentido oposto."},
+
+    {"acao": "escrever", "latex": "\\mathcal{E} = B\\ell v \\qquad i = \\dfrac{\\mathcal{E}}{R} = \\dfrac{B\\ell v}{R}",
+     "nota": "parte b, força magnética",
+     "narracao": "Para a segunda parte, a barra se move com velocidade v perpendicular ao campo, então a fem induzida vale B vezes l vezes v. Como o único resistor do circuito é R, a corrente vale essa fem dividida por R."},
+
+    {"acao": "escrever", "latex": "F = B\\,i\\,\\ell = \\dfrac{B^2\\ell^2 v}{R}", "destaque": true,
+     "narracao": "Essa corrente, percorrendo a barra dentro do campo, sofre uma força magnética de módulo B vezes i vezes l, que substituindo a corrente vira B ao quadrado, vezes l ao quadrado, vezes v, tudo dividido por R."},
+
+    {"acao": "escrever", "latex": "\\text{pela Lei de Lenz, } F \\text{ aponta para CIMA, freando a queda}",
+     "narracao": "Pela Lei de Lenz essa força sempre se opõe ao movimento que a originou, então ela aponta para cima, freando a barra. Se fosse ao contrário, o sistema aceleraria sem limite gerando energia de graça, o que a conservação de energia proíbe."},
+
+    {"acao": "escrever", "latex": "\\text{velocidade terminal: } F = P \\;\\Rightarrow\\; \\dfrac{B^2\\ell^2 v_T}{R} = mg",
+     "destaque": true, "nota": "parte c",
+     "narracao": "Para a terceira parte, a velocidade terminal acontece quando a força magnética equilibra exatamente o peso, e a barra passa a descer em movimento uniforme. Isso dá B ao quadrado, l ao quadrado, vezes a velocidade terminal, dividido por R, igual a m vezes g."},
+
+    {"acao": "escrever", "latex": "v_T = \\dfrac{mgR}{B^2\\ell^2} = \\dfrac{(0{,}05)(10)(0{,}1)}{(0{,}5)^2(0{,}2)^2}",
+     "narracao": "Isolando a velocidade terminal e substituindo os números, massa de zero vírgula zero cinco quilogramas, gravidade dez, resistência zero vírgula um, campo zero vírgula cinco ao quadrado, comprimento zero vírgula dois ao quadrado."},
+
+    {"acao": "escrever", "latex": "v_T = \\dfrac{0{,}05}{0{,}01} = 5\\ \\text{m/s}", "destaque": true,
+     "narracao": "O resultado é cinco metros por segundo. Mesmo sem atrito mecânico nos trilhos, existe uma espécie de atrito elétrico, a força magnética dissipando energia mecânica em calor no resistor, e é exatamente esse efeito que limita a velocidade da barra."}
+  ]
+}

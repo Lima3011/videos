@@ -1,0 +1,21 @@
+# Narração — faraday-04-q1-espcex
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Primeira questão de prova, EsPCEx de dois mil e vinte e dois. Uma espira de cobre está totalmente imersa num campo magnético variável, e o gráfico mostra o fluxo magnético na espira ao longo do tempo. Qual gráfico representa a força eletromotriz induzida ao longo do tempo?
+
+[2] Este é o gráfico de fluxo por tempo. De zero a seis segundos, uma reta indo de quinze weber até menos três weber, passando por zero exatamente em cinco segundos. De seis a oito segundos, o fluxo fica constante em menos três weber. E de oito a dez segundos, uma reta subindo de volta até zero.
+
+[3] A ideia chave é esta. Como o gráfico é linear por partes, a derivada do fluxo, e portanto a fem induzida, é constante em cada trecho, igual à inclinação daquele trecho com o sinal trocado. Basta calcular a inclinação de cada pedaço reto.
+
+[4] No primeiro trecho está a armadilha da questão. Muita gente vê a reta cruzando o zero em cinco segundos e acha que existe uma quebra ali. Mas é a mesma reta, com a mesma inclinação, do início ao fim do trecho, o cruzamento pelo zero é só um ponto dela. A inclinação vale menos três weber por segundo.
+
+[5] Trocando o sinal, a fem nesse trecho inteiro, de zero a seis segundos, vale mais três vírgula zero volts, constante.
+
+[6] No segundo trecho o fluxo fica constante em menos três weber. Fluxo constante significa derivada nula, então a fem nesse intervalo é exatamente zero.
+
+[7] No terceiro trecho, o fluxo sobe de menos três para zero em dois segundos, inclinação mais um vírgula cinco weber por segundo. Trocando o sinal, a fem vale menos um vírgula cinco volts.
+
+[8] E o gráfico final fica em três degraus. Mais três volts do início até seis segundos, cai para zero entre seis e oito segundos, e depois vai para menos um vírgula cinco volts até o fim, sem nenhuma quebra em cinco segundos.
+
+[9] Esse é exatamente o gráfico da alternativa á.
+

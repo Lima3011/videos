@@ -1,0 +1,17 @@
+# Narração — equilibrio-08-conclusao
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Repare que as três questões, de bancas e níveis diferentes, seguiram o mesmo caminho.
+
+[2] Escrever a equação balanceada. Montar a expressão da constante, lembrando de deixar sólido e líquido puros de fora. Montar a tabela de início, reage e equilíbrio, com o x multiplicado pelo coeficiente. E conferir o sentido do deslocamento pelo princípio de Le Chatelier.
+
+[3] As três armadilhas que apareceram valem uma revisão. Na primeira questão, o carbonato de cálcio sólido não entrava na constante, e por isso mexer nele não deslocava nada.
+
+[4] Na segunda, a entalpia negativa dizia que a ida libera calor, então aquecer favorecia a volta, e o lado com mais mols de gás só era favorecido descomprimindo.
+
+[5] E na terceira, a variação de mols igual a zero garantia que a pressão total continuava a mesma, o que liberava a conta inteira e ainda fazia K p e K c coincidirem.
+
+[6] Se você levar uma única frase desse vídeo para a prova, leve esta. A constante só muda com a temperatura. Concentração, pressão e catalisador mudam as concentrações, mas nunca o valor da constante.
+
+[7] Se esse formato te ajudou, deixe seu comentário dizendo qual assunto você quer ver resolvido assim na próxima. Até o próximo vídeo.
+

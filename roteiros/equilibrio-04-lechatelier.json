@@ -1,0 +1,44 @@
+{
+  "id": "equilibrio-04-lechatelier",
+  "banca": "GERAL", "ano": 2026, "ordem": 4,
+  "assunto": "Equilíbrio químico", "sub": "quociente Q e princípio de Le Chatelier",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Para onde o equilíbrio anda", "subtitulo": "quociente Q e Le Chatelier",
+     "narracao": "Falta responder a pergunta que as bancas mais gostam. Se eu cutucar o sistema, para que lado ele vai?"},
+
+    {"acao": "escrever", "latex": "Q_c = \\frac{[\\text{produtos}]}{[\\text{reagentes}]} \\quad \\text{(a qualquer momento)}",
+     "narracao": "A resposta mais honesta vem do quociente de reação. É a mesma conta da constante, mas usando as concentrações do momento, mesmo que o sistema ainda não esteja em equilíbrio."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["comparação", "o que acontece"],
+     "linhas": [
+       ["Q menor que K", "anda para a direita"],
+       ["Q igual a K", "já está em equilíbrio"],
+       ["Q maior que K", "anda para a esquerda"]
+     ],
+     "destacar_coluna": 1,
+     "narracao": "Se o quociente está menor que a constante, falta produto, então a reação caminha para a direita até alcançar a constante. Se está maior, sobra produto, e ela volta para a esquerda. Se são iguais, o sistema já chegou."},
+
+    {"acao": "escrever", "latex": "\\text{Le Chatelier} \\;=\\; \\text{o sistema reage CONTRA a perturbação}",
+     "destaque": true,
+     "narracao": "O princípio de Le Chatelier é a versão rápida disso. Toda perturbação é respondida no sentido que a alivia. Se você joga mais reagente, o sistema consome reagente. Se você comprime, ele encolhe."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["perturbação", "desloca para", "muda K?"],
+     "linhas": [
+       ["adicionar reagente", "produtos", "não"],
+       ["aumentar pressão", "menos mols de gás", "não"],
+       ["aumentar temperatura", "lado endotérmico", "SIM"],
+       ["catalisador", "não desloca", "não"]
+     ],
+     "destacar_coluna": 2,
+     "narracao": "Vale a pena decorar esta tabela. Adicionar reagente empurra para os produtos. Aumentar a pressão, o que é o mesmo que comprimir, empurra para o lado que tem menos mols de gás, porque assim o sistema ocupa menos espaço. Aumentar a temperatura empurra para o lado endotérmico, o lado que absorve calor. E o catalisador não desloca nada, ele só faz o sistema chegar mais rápido no mesmo equilíbrio."},
+
+    {"acao": "escrever", "latex": "\\Delta H < 0 \\;\\Rightarrow\\; \\text{direta exotérmica} \\;\\Rightarrow\\; \\text{esquentar volta para a esquerda}",
+     "destaque": true, "nota": "temperatura é a única que muda K",
+     "narracao": "E preste atenção na coluna da direita da tabela. Só a temperatura muda o valor da constante. Se a reação direta libera calor, ou seja, tem variação de entalpia negativa, então aquecer favorece o caminho de volta. Guarde isso, porque é exatamente a pegadinha da segunda questão."}
+  ]
+}

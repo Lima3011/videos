@@ -1,0 +1,13 @@
+# Narração — faraday-06-conclusao
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Chegamos ao fim. Antes de você ir resolver mais questões por conta própria, vamos amarrar tudo num resumo rápido, e depois passar pelas armadilhas que mais derrubam candidato em prova militar.
+
+[2] O fluxo magnético mede quanto campo atravessa o circuito. A Lei de Faraday diz que só existe força eletromotriz quando esse fluxo varia. A Lei de Lenz garante que a corrente induzida sempre se opõe à variação, como consequência direta da conservação de energia. Essa corrente só circula de verdade se o circuito estiver fechado. E toda a energia mecânica que entra no sistema acaba virando calor no resistor.
+
+[3] Agora as armadilhas mais comuns. Primeira, calcular certo o módulo mas esquecer de dar o sentido da corrente, a Lei de Lenz também é parte da resposta. Segunda, inverter a regra da mão direita, então sempre refaça o gesto com a própria mão. Terceira, achar que o campo é quem sempre varia, quando muitas vezes é a área do circuito. Quarta, esquecer que um circuito aberto pode ter fem sem nenhuma corrente circulando. E quinta, confundir força eletromotriz com corrente, lembrando que a corrente é a fem dividida pela resistência equivalente do circuito.
+
+[4] Se você guardar só uma frase desta aula, guarde esta. Campo magnético constante é eletricamente mudo, só a variação do fluxo produz corrente. Voltando a essa ideia, praticamente qualquer questão de indução se resolve.
+
+[5] Agora é com você. Refaça as duas questões desta aula sem olhar a resolução, principalmente a da barra sobre trilhos. É treinando esse tipo de raciocínio que se ganha segurança e velocidade na hora da prova. Bons estudos, e até a próxima aula.
+

@@ -1,0 +1,19 @@
+# Narração — equilibrio-02-kc
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Se as concentrações travam num certo valor, dá para transformar esse valor num número. Esse número é a constante de equilíbrio.
+
+[2] Para uma reação genérica, com coeficientes a, b, c e d.
+
+[3] A constante é produtos sobre reagentes, cada concentração elevada ao próprio coeficiente da equação balanceada. Produto em cima, reagente embaixo, expoente igual ao coeficiente. Se você trocar em cima por embaixo, cai numa alternativa errada que a banca sempre coloca.
+
+[4] Na síntese da amônia, por exemplo, um nitrogênio mais três hidrogênios formando duas amônias.
+
+[5] A constante fica amônia ao quadrado, em cima, dividida por nitrogênio vezes hidrogênio ao cubo, embaixo. Os coeficientes dois e três viraram os expoentes.
+
+[6] Agora a regra que decide muita questão. Sólido puro e líquido puro não entram na expressão. A concentração deles não muda enquanto eles existirem, então já está embutida no valor da constante. Só entram gases e substâncias dissolvidas.
+
+[7] E a segunda regra de ouro. O valor da constante só depende da temperatura. Adicionar reagente, mexer na pressão, usar catalisador, nada disso altera a constante. Muda as concentrações, mas o quociente entre elas volta para o mesmo número.
+
+[8] Por fim, o significado do tamanho dela. Constante muito maior que um quer dizer equilíbrio deslocado para os produtos, ou seja, bom rendimento. Constante muito menor que um quer dizer que quase nada se converteu.
+

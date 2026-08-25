@@ -1,0 +1,23 @@
+# Narração — probabilidade-07-q3-ita
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Terceira questão, primeira fase do ITA de dois mil e vinte e três. Aqui o evento complementar vira o herói da resolução.
+
+[2] Um conjunto de moedas é lançado sucessivas vezes. Em cada lançamento, todas as moedas que resultam em coroa são retiradas. As demais permanecem para o próximo lançamento. O jogo termina quando todas as moedas forem retiradas. A probabilidade do jogo durar mais que três rodadas, começando com quatro moedas, é uma destas cinco frações sobre quatro mil e noventa e seis.
+
+[3] Primeiro, traduzir o que a pergunta realmente quer. O jogo durar mais que três rodadas significa que, depois da terceira rodada, ainda sobra pelo menos uma moeda em jogo. Se todas tivessem sumido até a rodada três, o jogo já teria acabado ali.
+
+[4] Pelo menos uma sobrar é exatamente o gatilho que vimos na teoria. Em vez de calcular direto, calculamos o complementar, a probabilidade de TODAS as quatro moedas já terem sumido até a rodada três, e subtraímos de um.
+
+[5] Olhe para uma moeda só. Ela é retirada assim que der coroa. Para ela ainda estar em jogo depois de três rodadas, ela precisa ter dado cara nas três vezes.
+
+[6] A chance de dar cara três vezes seguidas é um meio ao cubo, um oitavo. Usando o complementar de novo, a chance dessa moeda JÁ TER SIDO retirada até a rodada três é um menos um oitavo, sete oitavos.
+
+[7] Como as quatro moedas são independentes entre si, a chance de TODAS as quatro já terem sido retiradas até a rodada três é sete oitavos, multiplicado por ele mesmo quatro vezes.
+
+[8] Sete elevado a quatro dá dois mil quatrocentos e um. Oito elevado a quatro dá quatro mil e noventa e seis.
+
+[9] Voltando ao complementar de novo, a resposta da questão é um menos essa fração.
+
+[10] Mil seiscentos e noventa e cinco, quatro mil e noventa e seis avos. Alternativa B.
+

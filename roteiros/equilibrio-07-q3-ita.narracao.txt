@@ -1,0 +1,29 @@
+# Narração — equilibrio-07-q3-ita
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Terceira questão, primeira fase do ITA de dois mil e dezesseis. Aqui a tabela que montamos na teoria vai trabalhar.
+
+[2] Quantidades iguais de hidrogênio e de iodo foram colocadas em um frasco, à temperatura T, resultando na pressão total de um bar. Verificou-se que houve produção de iodeto de hidrogênio, cuja pressão parcial foi de vinte e dois vírgula oito quilopascals. Assinale o valor mais próximo da constante de equilíbrio. Opção a, zero vírgula duzentos e noventa e cinco. Opção b, zero vírgula trezentos e cinquenta. Opção c, zero vírgula quatrocentos e noventa. Opção d, zero vírgula quinhentos e noventa. Opção e, zero vírgula setecentos.
+
+[3] A reação é a formação do iodeto de hidrogênio. Um hidrogênio mais um iodo formando dois iodetos de hidrogênio.
+
+[4] Primeiro, unidades. A pressão total é dada em bar e a parcial em quilopascal. Um bar são cem quilopascals, então vamos trabalhar tudo em quilopascal.
+
+[5] Agora a chave da questão. Conte os mols de gás dos dois lados. Dois de um lado, dois do outro. A variação é zero, ou seja, o número total de partículas de gás não muda enquanto a reação acontece.
+
+[6] E se o número de partículas não muda, num frasco de volume fixo e temperatura fixa, a pressão total também não muda. Ela continua valendo cem quilopascals no equilíbrio. Sem essa observação a questão não sai.
+
+[7] Montando a tabela em pressões parciais. As quantidades iniciais são iguais, então começamos com a mesma pressão p para os dois reagentes. No equilíbrio, o produto vale vinte e dois vírgula oito, que é o dado do enunciado.
+
+[8] Como a soma de todas as pressões parciais é a pressão total, o que sobra para os dois reagentes juntos é cem menos vinte e dois vírgula oito, ou seja, setenta e sete vírgula dois.
+
+[9] E como eles começaram iguais e consomem exatamente na mesma proporção, permanecem iguais no equilíbrio. Cada um vale a metade, trinta e oito vírgula seis quilopascals.
+
+[10] Agora é só aplicar a constante. Produto ao quadrado em cima, produto dos reagentes embaixo. E repare que embaixo os dois fatores são iguais, então dá para escrever como um quadrado também.
+
+[11] Fazendo a divisão primeiro, e só depois elevando ao quadrado, a conta fica muito mais leve. Vinte e dois vírgula oito dividido por trinta e oito vírgula seis dá aproximadamente zero vírgula cinquenta e nove.
+
+[12] Elevando ao quadrado, chegamos em zero vírgula trezentos e quarenta e nove. E como a variação de mols é zero, essa constante não tem unidade, e o valor de K p e de K c coincidem aqui.
+
+[13] O valor mais próximo entre as opções é zero vírgula trezentos e cinquenta. Alternativa B.
+

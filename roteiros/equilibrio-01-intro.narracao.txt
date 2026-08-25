@@ -1,0 +1,15 @@
+# Narração — equilibrio-01-intro
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Existe um tipo de reação que simplesmente não termina. Você espera, espera, e ela para de mudar sem ter consumido os reagentes. Hoje vamos entender por que isso acontece, e como as bancas militares cobram exatamente esse ponto.
+
+[2] O exemplo clássico é este. Dióxido de nitrogênio, um gás castanho, se juntando dois a dois para formar tetróxido de dinitrogênio, que é incolor. Numa ampola fechada, a cor escurece ou clareia até certo ponto e depois trava.
+
+[3] E aqui mora o primeiro erro de quem está começando. A cor parar de mudar não significa que a reação parou. Ela continua acontecendo, nos dois sentidos, o tempo todo.
+
+[4] Olhe as duas velocidades. No começo só existe reagente, então a reação direta é rápida e a inversa é zero. Conforme o produto aparece, a direta desacelera e a inversa acelera. O equilíbrio é o instante em que as duas se encontram e passam a andar juntas.
+
+[5] Essa é a definição. Equilíbrio químico é quando a velocidade da reação direta iguala a velocidade da reação inversa. Como o que é formado é reposto na mesma taxa, as concentrações ficam constantes, mas nunca iguais entre si, e o sistema continua reagindo por baixo dos panos.
+
+[6] O plano de voo é este. Primeiro a constante de equilíbrio, depois a tabela que resolve praticamente qualquer conta desse assunto, depois o princípio que diz para onde o equilíbrio anda quando você mexe nele. E aí três questões de prova militar, uma fácil, uma média e uma da primeira fase do ITA.
+

@@ -1,0 +1,47 @@
+{
+  "id": "probabilidade-06-q2-espcex-dados",
+  "banca": "EsPCEx", "ano": 2020, "ordem": 6,
+  "assunto": "Probabilidade", "sub": "probabilidade condicional com dois dados",
+  "gabarito": "C",
+  "alternativas": {"a": "1/12", "b": "1/2", "c": "1/6", "d": "1/3", "e": "1/18"},
+  "validacao": {
+    "tipo": "expressao",
+    "expr": "3/18",
+    "esperado": "1/6",
+    "alternativa_calculada": "c"
+  },
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 2", "subtitulo": "EsPCEx 2020 · nível médio",
+     "narracao": "Segunda questão, EsPCEx de dois mil e vinte. Agora a probabilidade condicional entra em ação."},
+
+    {"acao": "enunciado",
+     "texto": "Dois dados cúbicos não viciados, um azul e outro vermelho, são lançados. Os dois dados são numerados de 1 a 6. Qual a possibilidade da soma dos números que saírem nos dois dados dar 7, sabendo-se que no dado azul saiu um número par?",
+     "alternativas": "a) 1/12     b) 1/2     c) 1/6     d) 1/3     e) 1/18",
+     "narracao": "Dois dados não viciados, um azul e outro vermelho, numerados de um a seis, são lançados. Qual a probabilidade da soma dar sete, sabendo que no dado azul saiu um número par? Opção a, um doze avos. Opção b, um meio. Opção c, um sexto. Opção d, um terço. Opção e, um dezoito avos."},
+
+    {"acao": "escrever", "latex": "\\text{“sabendo-se que...”} \\;\\Rightarrow\\; \\text{condicional}", "destaque": true,
+     "narracao": "A palavra sabendo-se que é a senha. Isso é probabilidade condicional, e a estratégia mais rápida é encolher o espaço amostral para os casos em que a condição já é verdade."},
+
+    {"acao": "escrever", "latex": "\\text{dado azul par} \\;\\Rightarrow\\; \\text{azul} \\in \\{2,4,6\\}",
+     "narracao": "A condição é o dado azul dar par. Isso restringe o dado azul a três valores possíveis, dois, quatro ou seis."},
+
+    {"acao": "escrever", "latex": "n(B) = 3 \\times 6 = 18", "nota": "novo espaço amostral",
+     "narracao": "Com o azul travado em três valores, e o vermelho livre para valer qualquer um dos seis, o novo espaço amostral, considerando só os casos em que a condição vale, tem dezoito pares possíveis."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["azul", "vermelho p/ somar 7"],
+     "linhas": [["2", "5"], ["4", "3"], ["6", "1"]],
+     "destacar_coluna": 1,
+     "narracao": "Agora, dentro desses dezoito, quais pares somam sete? Para cada valor par do azul, existe exatamente um valor do vermelho que completa a soma sete. Azul dois com vermelho cinco, azul quatro com vermelho três, azul seis com vermelho um."},
+
+    {"acao": "escrever", "latex": "n(A \\cap B) = 3",
+     "narracao": "São três pares favoráveis dentro do novo espaço amostral de dezoito."},
+
+    {"acao": "escrever", "latex": "P(\\text{soma}=7 \\mid \\text{azul par}) = \\frac{3}{18} = \\frac{1}{6}", "destaque": true,
+     "narracao": "Três sobre dezoito, simplificando, dá um sexto."},
+
+    {"acao": "resposta", "latex": "P = \\frac{1}{6}", "alternativa": "c",
+     "narracao": "Um sexto. Alternativa C."}
+  ]
+}

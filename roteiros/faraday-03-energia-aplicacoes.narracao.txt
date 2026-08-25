@@ -1,0 +1,15 @@
+# Narração — faraday-03-energia-aplicacoes
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Agora que já temos a força eletromotriz induzida, falta o último passo, transformar isso em corrente elétrica de verdade.
+
+[2] Quando o único elemento resistivo do circuito é um resistor de resistência R, com fios e barra sem resistência, a fem induzida se comporta exatamente como uma pilha, e a corrente que circula é dada simplesmente pela Lei de Ohm, o módulo da fem dividido pela resistência.
+
+[3] Um cuidado que derruba muito candidato. Uma força eletromotriz induzida pode existir mesmo num circuito aberto, como nas extremidades de uma barra isolada se movendo num campo. Mas corrente só circula de verdade se houver um caminho fechado para as cargas.
+
+[4] E para onde vai essa energia? Alguém precisa realizar trabalho mecânico contra a força magnética que surge para se opor ao movimento, seja a queda d'água, uma mão movendo um ímã, ou o vento girando uma turbina. Esse trabalho mecânico vira energia elétrica, que por sua vez é dissipada como calor. Nenhuma energia é criada, ela só muda de forma.
+
+[5] Essa dissipação em calor é o efeito Joule, e a potência dissipada no resistor vale R vezes a corrente ao quadrado. É esse balanço, mecânica virando elétrica virando térmica, que resolve praticamente toda pergunta de energia que uma prova militar faz sobre indução.
+
+[6] E é por isso que essa lei está em todo lugar. No gerador, uma bobina gira dentro de um campo, variando o fluxo continuamente. No transformador, uma corrente alternada cria um campo variável que induz fem numa segunda bobina. No freio magnético, um condutor atravessando o campo sofre correntes de Foucault que dissipam energia cinética em calor, freando sem contato. E no carregador sem fio, uma bobina oscilante induz corrente na bobina de dentro do celular, carregando a bateria sem nenhum fio físico.
+

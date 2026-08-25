@@ -1,0 +1,68 @@
+{
+  "id": "recorrencia-03-domino",
+  "banca": "GERAL", "ano": 2026, "ordem": 3, "assunto": "Recorrência", "sub": "cobertura com dominó",
+  "passos": [
+    {"acao": "titulo", "texto": "Problema 1", "subtitulo": "cobrindo um tabuleiro com dominó",
+     "narracao": "Primeiro problema."},
+
+    {"acao": "enunciado",
+     "texto": "De quantos jeitos dá pra cobrir um tabuleiro 2 por n usando só peças de dominó 1 por 2, sem sobrepor as peças e sem deixar buraco no tabuleiro?",
+     "narracao": "De quantos jeitos dá pra cobrir um tabuleiro dois por n usando só peças de dominó, um por dois, sem sobrepor e sem deixar buraco?"},
+
+    {"acao": "escrever", "latex": "f(n) = \\text{número de jeitos de cobrir um tabuleiro } 2\\times n",
+     "narracao": "Vamos chamar de f de n esse número de jeitos."},
+
+    {"acao": "tabuleiro", "linhas": 2, "colunas": 1,
+     "pecas": [{"col": 0, "linha": 0, "orientacao": "V"}], "fixar": true,
+     "narracao": "Para n igual a um, só existe um jeito, uma peça vertical."},
+
+    {"acao": "tabuleiro", "linhas": 2, "colunas": 2,
+     "pecas": [{"col": 0, "linha": 1, "orientacao": "H"}, {"col": 0, "linha": 0, "orientacao": "H"}],
+     "fixar": true,
+     "narracao": "Para n igual a dois, existem dois jeitos, duas peças verticais lado a lado, ou duas peças horizontais empilhadas. É esta segunda opção que estou mostrando aqui."},
+
+    {"acao": "tabuleiro", "linhas": 2, "colunas": 3,
+     "pecas": [{"col": 0, "linha": 0, "orientacao": "V"}, {"col": 1, "linha": 1, "orientacao": "H"},
+               {"col": 1, "linha": 0, "orientacao": "H"}],
+     "fixar": true,
+     "narracao": "Para n igual a três, existem três jeitos possíveis. Aqui está um deles, uma vertical seguida de duas horizontais empilhadas."},
+
+    {"acao": "escrever", "latex": "f(1) = 1, \\quad f(2) = 2, \\quad f(3) = 3",
+     "narracao": "Resumindo o que contamos na mão até aqui, f de um é um, f de dois é dois, f de três é três."},
+
+    {"acao": "escrever", "latex": "\\text{olhe para a ÚLTIMA coluna do tabuleiro}", "destaque": true,
+     "narracao": "Agora vem o truque. Em vez de contar cada caso na mão, olhe só para a última coluna do tabuleiro. Só existem duas possibilidades para ela."},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "retangulo", "x": -0.6, "y": 0, "largura": 3.6, "altura": 1.8, "cor": "apoio", "preencher": true, "opacidade": 0.18},
+       {"tipo": "segmento", "x1": -2.4, "y1": 0, "x2": 1.2, "y2": 0, "cor": "apoio"},
+       {"tipo": "texto", "x": -0.6, "y": 0.45, "texto": "f(n-1) jeitos", "cor": "giz", "tamanho": 24},
+       {"tipo": "retangulo", "x": 1.75, "y": 0, "largura": 0.9, "altura": 1.8, "cor": "destaque", "preencher": true, "opacidade": 0.5},
+       {"tipo": "segmento", "x1": 1.3, "y1": 0, "x2": 2.2, "y2": 0, "cor": "apoio"},
+       {"tipo": "texto", "x": 1.75, "y": 1.25, "texto": "última coluna", "cor": "destaque", "tamanho": 16}
+     ],
+     "narracao": "Primeira possibilidade, a última coluna é coberta por uma peça vertical. Nesse caso, sobra um tabuleiro dois por n menos um pra cobrir, e isso pode ser feito de f de n menos um jeitos."},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "retangulo", "x": -0.6, "y": 0, "largura": 3.6, "altura": 1.8, "cor": "apoio", "preencher": true, "opacidade": 0.18},
+       {"tipo": "segmento", "x1": -2.4, "y1": 0, "x2": 1.2, "y2": 0, "cor": "apoio"},
+       {"tipo": "texto", "x": -0.6, "y": 0.45, "texto": "f(n-2) jeitos", "cor": "giz", "tamanho": 24},
+       {"tipo": "retangulo", "x": 2.2, "y": 0.45, "largura": 1.8, "altura": 0.9, "cor": "destaque", "preencher": true, "opacidade": 0.5},
+       {"tipo": "retangulo", "x": 2.2, "y": -0.45, "largura": 1.8, "altura": 0.9, "cor": "nota", "preencher": true, "opacidade": 0.5},
+       {"tipo": "texto", "x": 2.2, "y": 1.25, "texto": "últimas 2 colunas", "cor": "destaque", "tamanho": 16}
+     ],
+     "narracao": "Segunda possibilidade, as duas últimas colunas são cobertas por duas peças horizontais empilhadas. Nesse caso, sobra um tabuleiro dois por n menos dois, que pode ser coberto de f de n menos dois jeitos."},
+
+    {"acao": "escrever", "latex": "f(n) = f(n-1) + f(n-2)", "destaque": true,
+     "nota": "a mesma regra de Fibonacci!",
+     "narracao": "Como esses dois casos nunca se sobrepõem, o total é a soma dos dois. f de n é f de n menos um mais f de n menos dois. A mesma regra de Fibonacci, escondida dentro de um problema que parecia não ter nada a ver."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["n", "f(n)"],
+     "linhas": [["1", "1"], ["2", "2"], ["3", "3"], ["4", "5"], ["5", "8"], ["6", "13"]],
+     "destacar_coluna": 1,
+     "narracao": "E a recorrência realmente funciona na prática. Partindo de f de um igual a um e f de dois igual a dois, que a gente já contou na mão, dá pra construir o resto direto. f de três é f de dois mais f de um, três, que bate com o que contamos. f de quatro é f de três mais f de dois, cinco. f de cinco é oito. f de seis é treze. Repare, um, dois, três, cinco, oito, treze, são exatamente os números de Fibonacci, só começando um passo à frente."}
+  ]
+}

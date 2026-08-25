@@ -1,0 +1,45 @@
+{
+  "id": "probabilidade-05-q1-espcex",
+  "banca": "EsPCEx", "ano": 2013, "ordem": 5,
+  "assunto": "Probabilidade", "sub": "probabilidade clássica sobre divisores (combinada com contagem)",
+  "gabarito": "C",
+  "alternativas": {"a": "1/24", "b": "1/8", "c": "1/3", "d": "1/2", "e": "2/3"},
+  "validacao": {
+    "tipo": "expressao",
+    "expr": "divisor_count(360/12) / divisor_count(360)",
+    "esperado": "1/3",
+    "alternativa_calculada": "c"
+  },
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 1", "subtitulo": "EsPCEx 2013 · nível fácil",
+     "narracao": "Primeira questão, EsPCEx de dois mil e treze. Uma mistura de probabilidade clássica com o assunto de divisores."},
+
+    {"acao": "enunciado",
+     "texto": "Se escolhermos, ao acaso, um elemento do conjunto dos divisores inteiros positivos do número 360, a probabilidade de esse elemento ser um número múltiplo de 12 é:",
+     "alternativas": "a) 1/24     b) 1/8     c) 1/3     d) 1/2     e) 2/3",
+     "narracao": "Se escolhermos, ao acaso, um elemento do conjunto dos divisores inteiros positivos do número trezentos e sessenta, a probabilidade desse elemento ser múltiplo de doze é. Opção a, um vinte e quatro avos. Opção b, um oitavo. Opção c, um terço. Opção d, um meio. Opção e, dois terços."},
+
+    {"acao": "escrever", "latex": "P(A) = \\frac{n(A)}{n(\\Omega)}", "nota": "probabilidade clássica",
+     "narracao": "É probabilidade clássica pura, casos favoráveis sobre casos possíveis. O espaço amostral aqui é o conjunto dos divisores de trezentos e sessenta, e o evento favorável são os divisores que também são múltiplos de doze."},
+
+    {"acao": "escrever", "latex": "360 = 2^{3} \\cdot 3^{2} \\cdot 5^{1}", "nota": "fatoração",
+     "narracao": "Fatorando trezentos e sessenta em primos, dois ao cubo, vezes três ao quadrado, vezes cinco."},
+
+    {"acao": "escrever", "latex": "n(\\Omega) = (3+1)(2+1)(1+1) = 24",
+     "narracao": "O total de divisores, somando um em cada expoente e multiplicando, dá vinte e quatro. Esse é o denominador."},
+
+    {"acao": "escrever", "latex": "12 = 2^{2}\\cdot 3 \\quad\\Rightarrow\\quad d = 12k \\ \\text{com}\\ k \\mid 30",
+     "destaque": true, "nota": "o truque da questão",
+     "narracao": "Agora o truque para contar o numerador sem listar tudo na mão. Doze é dois ao quadrado vezes três. Todo divisor de trezentos e sessenta que é múltiplo de doze pode ser escrito como doze vezes k. E para doze k dividir trezentos e sessenta, k precisa dividir trezentos e sessenta sobre doze, que é trinta."},
+
+    {"acao": "escrever", "latex": "n(A) = \\#\\{\\text{divisores de } 30\\} = (1{+}1)(1{+}1)(1{+}1) = 8",
+     "narracao": "Ou seja, contar os múltiplos de doze que dividem trezentos e sessenta é o mesmo que contar os divisores de trinta, que é dois vezes três vezes cinco. Um mais um, vezes um mais um, vezes um mais um, dá oito."},
+
+    {"acao": "escrever", "latex": "P(A) = \\frac{8}{24} = \\frac{1}{3}", "destaque": true,
+     "narracao": "Oito casos favoráveis sobre vinte e quatro possíveis, simplificando, dá um terço."},
+
+    {"acao": "resposta", "latex": "P(A) = \\frac{1}{3}", "alternativa": "c",
+     "narracao": "Um terço. Alternativa C."}
+  ]
+}

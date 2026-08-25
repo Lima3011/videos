@@ -1,0 +1,44 @@
+{
+  "id": "faraday-03-energia-aplicacoes",
+  "banca": "GERAL", "ano": 2026, "ordem": 3,
+  "assunto": "Lei de Faraday", "sub": "da fem à corrente, balanço de energia e aplicações",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Da fem à corrente", "subtitulo": "e para onde vai a energia",
+     "narracao": "Agora que já temos a força eletromotriz induzida, falta o último passo, transformar isso em corrente elétrica de verdade."},
+
+    {"acao": "escrever", "latex": "i = \\dfrac{|\\mathcal{E}|}{R}", "destaque": true,
+     "nota": "Lei de Ohm",
+     "narracao": "Quando o único elemento resistivo do circuito é um resistor de resistência R, com fios e barra sem resistência, a fem induzida se comporta exatamente como uma pilha, e a corrente que circula é dada simplesmente pela Lei de Ohm, o módulo da fem dividido pela resistência."},
+
+    {"acao": "escrever", "latex": "\\text{fem pode existir sem corrente, se o circuito estiver aberto}",
+     "nota": "cuidado, fem e corrente não são a mesma coisa",
+     "narracao": "Um cuidado que derruba muito candidato. Uma força eletromotriz induzida pode existir mesmo num circuito aberto, como nas extremidades de uma barra isolada se movendo num campo. Mas corrente só circula de verdade se houver um caminho fechado para as cargas."},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "texto", "x": -2.7, "y": 0, "texto": "mecânica", "cor": "giz", "tamanho": 22},
+       {"tipo": "seta", "x1": -1.85, "y1": 0, "x2": -0.9, "y2": 0, "cor": "destaque"},
+       {"tipo": "texto", "x": 0, "y": 0, "texto": "elétrica", "cor": "giz", "tamanho": 22},
+       {"tipo": "seta", "x1": 0.9, "y1": 0, "x2": 1.85, "y2": 0, "cor": "destaque"},
+       {"tipo": "texto", "x": 2.7, "y": 0, "texto": "térmica", "cor": "giz", "tamanho": 22}
+     ],
+     "narracao": "E para onde vai essa energia? Alguém precisa realizar trabalho mecânico contra a força magnética que surge para se opor ao movimento, seja a queda d'água, uma mão movendo um ímã, ou o vento girando uma turbina. Esse trabalho mecânico vira energia elétrica, que por sua vez é dissipada como calor. Nenhuma energia é criada, ela só muda de forma."},
+
+    {"acao": "escrever", "latex": "P = R\\,i^2", "destaque": true,
+     "nota": "efeito Joule",
+     "narracao": "Essa dissipação em calor é o efeito Joule, e a potência dissipada no resistor vale R vezes a corrente ao quadrado. É esse balanço, mecânica virando elétrica virando térmica, que resolve praticamente toda pergunta de energia que uma prova militar faz sobre indução."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["aplicação", "o que varia o fluxo"],
+     "linhas": [
+       ["gerador elétrico", "bobina gira dentro do campo"],
+       ["transformador", "corrente alternada na bobina primária"],
+       ["freio magnético (Foucault)", "condutor se move através do campo"],
+       ["carregador sem fio", "bobina do carregador oscila o campo"]
+     ],
+     "narracao": "E é por isso que essa lei está em todo lugar. No gerador, uma bobina gira dentro de um campo, variando o fluxo continuamente. No transformador, uma corrente alternada cria um campo variável que induz fem numa segunda bobina. No freio magnético, um condutor atravessando o campo sofre correntes de Foucault que dissipam energia cinética em calor, freando sem contato. E no carregador sem fio, uma bobina oscilante induz corrente na bobina de dentro do celular, carregando a bateria sem nenhum fio físico."}
+  ]
+}

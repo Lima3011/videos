@@ -1,0 +1,25 @@
+# Narração — faraday-05-q2-barra-trilhos
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Segunda questão, agora sem alternativas, o clássico problema da barra sobre trilhos, nível ITA e IME.
+
+[2] Uma barra condutora P Q, de comprimento l e massa m, desliza sem atrito verticalmente sobre dois trilhos condutores paralelos, ligados no topo por um resistor de resistência R. Todo o conjunto está imerso num campo magnético uniforme B, perpendicular ao plano dos trilhos e entrando na página. A barra é abandonada em repouso e passa a cair. Os dados são massa de cinquenta gramas, comprimento de vinte centímetros, campo de zero vírgula cinco tesla, resistência de zero vírgula um ohm, e gravidade de dez metros por segundo ao quadrado.
+
+[3] Este é o esquema. Dois trilhos verticais ligados por um resistor no topo, a barra P Q na horizontal apoiada sobre eles, o campo entrando na página, marcado pelos xis, a barra caindo com velocidade v, e a força magnética F que vamos calcular, sempre apontando contra o movimento.
+
+[4] Primeira pergunta, o sentido da corrente. Enquanto a barra cai, ela se afasta do resistor lá em cima, e a área do circuito fechado aumenta. Como o campo é constante e entra na página, o fluxo entrando na página está aumentando.
+
+[5] Pela Lei de Lenz, a corrente induzida se opõe a esse aumento, criando um campo induzido que sai da página dentro da espira. Pela regra da mão direita, isso é uma corrente em sentido anti-horário, ou seja, na barra a corrente flui de Q para P, e retorna pelo resistor no sentido oposto.
+
+[6] Para a segunda parte, a barra se move com velocidade v perpendicular ao campo, então a fem induzida vale B vezes l vezes v. Como o único resistor do circuito é R, a corrente vale essa fem dividida por R.
+
+[7] Essa corrente, percorrendo a barra dentro do campo, sofre uma força magnética de módulo B vezes i vezes l, que substituindo a corrente vira B ao quadrado, vezes l ao quadrado, vezes v, tudo dividido por R.
+
+[8] Pela Lei de Lenz essa força sempre se opõe ao movimento que a originou, então ela aponta para cima, freando a barra. Se fosse ao contrário, o sistema aceleraria sem limite gerando energia de graça, o que a conservação de energia proíbe.
+
+[9] Para a terceira parte, a velocidade terminal acontece quando a força magnética equilibra exatamente o peso, e a barra passa a descer em movimento uniforme. Isso dá B ao quadrado, l ao quadrado, vezes a velocidade terminal, dividido por R, igual a m vezes g.
+
+[10] Isolando a velocidade terminal e substituindo os números, massa de zero vírgula zero cinco quilogramas, gravidade dez, resistência zero vírgula um, campo zero vírgula cinco ao quadrado, comprimento zero vírgula dois ao quadrado.
+
+[11] O resultado é cinco metros por segundo. Mesmo sem atrito mecânico nos trilhos, existe uma espécie de atrito elétrico, a força magnética dissipando energia mecânica em calor no resistor, e é exatamente esse efeito que limita a velocidade da barra.
+

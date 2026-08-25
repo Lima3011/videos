@@ -1,0 +1,15 @@
+# Narração — probabilidade-01-intro
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Probabilidade é a única matéria em que sua intuição vai te trair o tempo todo. Hoje vamos aprender o método que não erra, e resolver três questões de prova militar com ele, uma fácil, uma média e uma da primeira fase do ITA.
+
+[2] Comece com o exemplo mais simples possível. Jogar uma moeda duas vezes seguidas.
+
+[3] O primeiro lançamento tem dois resultados possíveis. Para cada um deles, o segundo lançamento também tem dois resultados possíveis. Ligando tudo, aparecem quatro caminhos, quatro resultados possíveis ao todo, todos igualmente prováveis.
+
+[4] Esse conjunto de todos os resultados possíveis tem nome, espaço amostral. Cara-cara, cara-coroa, coroa-cara, coroa-coroa.
+
+[5] Agora repare como a intuição engana. Muita gente acha que a chance de sair pelo menos uma cara em dois lançamentos é de cinquenta por cento, porque cada moeda tem metade de chance. Mas contando o espaço amostral direito, três dos quatro resultados têm pelo menos uma cara. É setenta e cinco por cento, não cinquenta.
+
+[6] Esse é o espírito do assunto inteiro. A gente não vai confiar em achismo. Vai contar direito, com um método que funciona sempre. Depois de definição clássica, probabilidade condicional e a regra da união, resolvemos as três questões.
+

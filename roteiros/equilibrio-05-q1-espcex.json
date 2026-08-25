@@ -1,0 +1,56 @@
+{
+  "id": "equilibrio-05-q1-espcex",
+  "banca": "EsPCEx", "ano": 2016, "ordem": 5,
+  "assunto": "Equilíbrio químico", "sub": "deslocamento por concentração, com sólido e líquido puros",
+  "gabarito": "C",
+  "alternativas": {
+    "a": "aumentar carbonato desloca para os reagentes",
+    "b": "diminuir CO2 não desloca",
+    "c": "aumentar CO2 desloca para os produtos",
+    "d": "aumentar carbonato desloca nos dois sentidos",
+    "e": "aumentar CO2 desloca para os reagentes"
+  },
+  "validacao": {"tipo": "conceitual", "alternativa_calculada": "c"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 1", "subtitulo": "EsPCEx 2016 · nível fácil",
+     "narracao": "Primeira questão, EsPCEx de dois mil e dezesseis."},
+
+    {"acao": "enunciado",
+     "texto": "Os corais fixam-se sobre uma base de carbonato de cálcio (CaCO3), produzido por eles mesmos. O carbonato de cálcio em contato com a água do mar e com o gás carbônico dissolvido pode estabelecer o seguinte equilíbrio químico para a formação do hidrogenocarbonato de cálcio. Considerando um sistema fechado onde ocorre esse equilíbrio, assinale a alternativa correta.",
+     "narracao": "Os corais fixam-se sobre uma base de carbonato de cálcio, produzido por eles mesmos. Em contato com a água do mar e com o gás carbônico dissolvido, o carbonato estabelece um equilíbrio químico que forma hidrogenocarbonato de cálcio. Considerando um sistema fechado, assinale a alternativa correta."},
+
+    {"acao": "escrever",
+     "latex": "\\mathrm{CaCO_3}(s) + \\mathrm{CO_2}(g) + \\mathrm{H_2O}(l) \\;\\rightleftharpoons\\; \\mathrm{Ca(HCO_3)_2}(aq)",
+     "narracao": "Esta é a equação. Carbonato de cálcio sólido, mais gás carbônico, mais água líquida, formando hidrogenocarbonato de cálcio dissolvido."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["", "alternativa"],
+     "linhas": [
+       ["A", "aumentar carbonato desloca p/ reagentes"],
+       ["B", "diminuir CO2 não desloca"],
+       ["C", "aumentar CO2 desloca p/ produtos"],
+       ["D", "aumentar carbonato desloca p/ os 2 lados"],
+       ["E", "aumentar CO2 desloca p/ reagentes"]
+     ],
+     "destacar_coluna": 1,
+     "narracao": "As cinco alternativas, resumidas, falam de duas coisas apenas. Mexer no carbonato de cálcio, ou mexer no gás carbônico. Vamos usar a expressão da constante para decidir."},
+
+    {"acao": "escrever",
+     "latex": "K_c = \\frac{[\\mathrm{Ca(HCO_3)_2}]}{[\\mathrm{CO_2}]}",
+     "destaque": true, "nota": "sólido e líquido puros ficam de fora",
+     "narracao": "Olhe quem sobrou. O carbonato de cálcio é sólido puro e a água é líquido puro, então os dois ficam fora da expressão. Sobra o hidrogenocarbonato dissolvido em cima e o gás carbônico embaixo."},
+
+    {"acao": "escrever", "latex": "\\text{mexer no } \\mathrm{CaCO_3} \\;\\Rightarrow\\; \\text{não desloca nada}",
+     "narracao": "Isso já elimina três alternativas de uma vez. Como o sólido não aparece na constante, colocar mais pedra de carbonato não desloca o equilíbrio para lado nenhum. Caem as opções A e D."},
+
+    {"acao": "escrever", "latex": "\\uparrow [\\mathrm{CO_2}] \\;\\Rightarrow\\; Q_c < K_c \\;\\Rightarrow\\; \\rightarrow \\text{ produtos}",
+     "narracao": "Já o gás carbônico está no denominador. Aumentar a concentração dele faz o quociente ficar menor que a constante, e o sistema anda para a direita, consumindo esse excesso e formando mais hidrogenocarbonato. Isso é Le Chatelier puro, o sistema reage contra a perturbação."},
+
+    {"acao": "escrever", "latex": "\\text{diminuir } [\\mathrm{CO_2}] \\;\\Rightarrow\\; \\leftarrow \\text{ reagentes}",
+     "narracao": "E pelo mesmo motivo, tirar gás carbônico desloca para a esquerda, o que derruba a alternativa B, que dizia que nada aconteceria. A alternativa E inverte o sentido, então também está errada."},
+
+    {"acao": "resposta", "latex": "\\uparrow [\\mathrm{CO_2}] \\Rightarrow \\text{sentido direto}", "alternativa": "c",
+     "narracao": "Sobra a letra C. Aumentar a concentração de gás carbônico desloca no sentido direto, o de formação do produto. Alternativa C."}
+  ]
+}

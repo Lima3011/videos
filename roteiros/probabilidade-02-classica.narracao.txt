@@ -1,0 +1,15 @@
+# Narração — probabilidade-02-classica
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] A definição mais básica, e a que resolve a maioria das questões de prova militar sozinha.
+
+[2] A probabilidade de um evento A é o número de casos favoráveis a A, dividido pelo número total de casos possíveis. Isso só vale quando todo resultado do espaço amostral tem a mesma chance de acontecer, moeda honesta, dado não viciado, sorteio justo.
+
+[3] Um dado de seis faces, cada número tem a mesma chance. Um caso favorável, o cinco, sobre seis casos possíveis.
+
+[4] A probabilidade está sempre entre zero e um. Zero é impossível, um é certeza. Se sua conta der um número fora desse intervalo, tem erro na modelagem.
+
+[5] Um exemplo com evento composto. Sair um número par no dado. Os casos favoráveis são dois, quatro e seis, três casos, sobre os seis possíveis, dá um meio.
+
+[6] E na prática, contar casos favoráveis e possíveis é combinatória disfarçada. Quando o enunciado tem sorteio, comissão ou fila, geralmente é combinação ou permutação por trás. A conta de probabilidade em si é sempre essa fração simples, o trabalho pesado é contar direito o numerador e o denominador.
+

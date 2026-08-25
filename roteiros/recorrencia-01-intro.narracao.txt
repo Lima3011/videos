@@ -1,0 +1,11 @@
+# Narração — recorrencia-01-intro
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Existe uma ideia matemática que se disfarça de mil formas diferentes, um dominó, uma torre de discos, até um círculo cheio de retas. Hoje vamos caçar essa ideia escondida em três problemas.
+
+[2] Esse é o exemplo mais famoso, a sequência de Fibonacci. Um, um, dois, três, cinco, oito, treze.
+
+[3] Repare a regra, cada termo é a soma dos dois anteriores. Isso é uma recorrência, uma sequência onde o próximo passo depende dos passos que já aconteceram.
+
+[4] Vamos ver essa mesma regra reaparecer em um problema de cobertura com dominó, na torre de Hanói, e no final, um problema de círculos que vai quebrar todas as suas expectativas.
+

@@ -1,0 +1,15 @@
+{
+  "id": "recorrencia-02-fibonacci",
+  "banca": "GERAL", "ano": 2026, "ordem": 2, "assunto": "Recorrência", "sub": "espiral de Fibonacci",
+  "passos": [
+    {"acao": "anim_fibonacci", "n_quadrados": 7, "fixar": true,
+     "narracao": "Veja a beleza dessa sequência. Cada quadrado tem lado igual a um termo de Fibonacci, e encaixa perfeitamente ao lado dos dois quadrados anteriores. Essa espiral aparece em conchas, em galáxias, em pétalas de flor."},
+
+    {"acao": "escrever", "latex": "\\text{lado do quadrado 5} = \\text{lado do quadrado 4} + \\text{lado do quadrado 3}",
+     "narracao": "Olhe pro quadrado de lado cinco. Ele encosta exatamente na aresta formada pelos dois quadrados anteriores, de lado três e de lado dois, juntos. Por isso o lado dele tem que ser a soma dos outros dois."},
+
+    {"acao": "escrever", "latex": "f(n) = f(n-1) + f(n-2)", "destaque": true,
+     "nota": "é essa regra que vamos caçar nos 2 problemas a seguir",
+     "narracao": "Escrevendo de forma geral, o lado do quadrado n é o lado do quadrado anterior mais o lado do quadrado anterior a esse. Essa é a regra de formação, escondida na própria geometria da espiral. É essa mesma regra que vamos caçar nos dois problemas a seguir, disfarçada."}
+  ]
+}

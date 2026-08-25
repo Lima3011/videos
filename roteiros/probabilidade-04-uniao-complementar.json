@@ -1,0 +1,30 @@
+{
+  "id": "probabilidade-04-uniao-complementar",
+  "banca": "GERAL", "ano": 2026, "ordem": 4,
+  "assunto": "Probabilidade", "sub": "regra da união e evento complementar",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "União e complementar", "subtitulo": "as duas ferramentas que faltam",
+     "narracao": "Faltam duas ferramentas, e uma delas vai resolver sozinha a questão mais difícil do vídeo."},
+
+    {"acao": "escrever", "latex": "P(A \\cup B) = P(A) + P(B) - P(A \\cap B)", "destaque": true,
+     "nota": "regra da soma",
+     "narracao": "A primeira é a regra da união. A probabilidade de A ou B é a soma das probabilidades, menos a intersecção. Subtraímos a intersecção porque, ao somar P de A com P de B, os casos em que os dois acontecem juntos foram contados duas vezes."},
+
+    {"acao": "escrever", "latex": "\\text{se } A \\cap B = \\varnothing \\;\\Rightarrow\\; P(A \\cup B) = P(A) + P(B)",
+     "narracao": "Se os eventos são mutuamente exclusivos, ou seja, não podem acontecer ao mesmo tempo, a intersecção é vazia e a regra vira uma soma direta. Tirar um rei ou uma dama do baralho, por exemplo, nunca acontecem juntos numa carta só."},
+
+    {"acao": "escrever", "latex": "P(A) + P(\\bar{A}) = 1 \\quad\\Rightarrow\\quad P(A) = 1 - P(\\bar{A})",
+     "destaque": true, "nota": "evento complementar",
+     "narracao": "A segunda ferramenta é o evento complementar. A probabilidade de A mais a probabilidade de A não acontecer soma sempre um. Então, se P de A é difícil de calcular direto, calcule a probabilidade do complementar e subtraia de um."},
+
+    {"acao": "escrever", "latex": "\\text{“pelo menos um” ou “pelo menos uma vez”}",
+     "destaque": true, "nota": "gatilho pra usar o complementar",
+     "narracao": "E aqui vai a dica mais valiosa do vídeo. Toda vez que a questão pedir pelo menos um, ou pelo menos uma vez, é quase sempre mais fácil calcular o complementar, nenhum, e fazer um menos esse valor. Calcular pelo menos um direto exige somar um monte de casos, calcular nenhum é uma conta só."},
+
+    {"acao": "escrever", "latex": "P(\\text{pelo menos 1 cara em } n\\text{ moedas}) = 1 - \\left(\\frac{1}{2}\\right)^{n}",
+     "narracao": "Um exemplo rápido. A chance de sair pelo menos uma cara em n moedas é um, menos a chance de todas darem coroa. É exatamente essa lógica que resolve a questão do ITA que vem a seguir."}
+  ]
+}

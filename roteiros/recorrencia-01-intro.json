@@ -1,0 +1,18 @@
+{
+  "id": "recorrencia-01-intro",
+  "banca": "GERAL", "ano": 2026, "ordem": 1, "assunto": "Recorrência", "sub": "introdução",
+  "passos": [
+    {"acao": "titulo", "texto": "Recorrência", "subtitulo": "a ideia que conecta tudo",
+     "narracao": "Existe uma ideia matemática que se disfarça de mil formas diferentes, um dominó, uma torre de discos, até um círculo cheio de retas. Hoje vamos caçar essa ideia escondida em três problemas."},
+
+    {"acao": "escrever", "latex": "1,\\ 1,\\ 2,\\ 3,\\ 5,\\ 8,\\ 13,\\ \\ldots",
+     "narracao": "Esse é o exemplo mais famoso, a sequência de Fibonacci. Um, um, dois, três, cinco, oito, treze."},
+
+    {"acao": "escrever", "latex": "f(n) = f(n-1) + f(n-2)", "destaque": true,
+     "nota": "cada termo depende dos anteriores",
+     "narracao": "Repare a regra, cada termo é a soma dos dois anteriores. Isso é uma recorrência, uma sequência onde o próximo passo depende dos passos que já aconteceram."},
+
+    {"acao": "escrever", "latex": "\\text{dominó} \\quad\\to\\quad \\text{torre de discos} \\quad\\to\\quad \\text{círculo}",
+     "narracao": "Vamos ver essa mesma regra reaparecer em um problema de cobertura com dominó, na torre de Hanói, e no final, um problema de círculos que vai quebrar todas as suas expectativas."}
+  ]
+}

@@ -1,0 +1,13 @@
+# Narração — recorrencia-06-conclusao
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Recapitulando os três problemas de hoje.
+
+[2] O dominó, cobrindo um tabuleiro dois por n, escondia a mesma regra de Fibonacci.
+
+[3] A torre de Hanói tinha uma recorrência parecida, mas que dobra a cada passo, resultando numa fórmula exponencial.
+
+[4] E os círculos de Moser nos lembraram que nem todo padrão bonito nos primeiros casos é, de fato, verdadeiro pra sempre.
+
+[5] Da próxima vez que você encontrar um problema de contagem, faça essa pergunta, será que o caso n depende de algum caso anterior? Se a resposta for sim, você já tem metade da solução em mãos.
+

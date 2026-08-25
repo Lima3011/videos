@@ -1,0 +1,73 @@
+{
+  "id": "faraday-04-q1-espcex",
+  "banca": "EsPCEx", "ano": 2022, "ordem": 4,
+  "assunto": "Lei de Faraday", "sub": "leitura de gráfico Φ×t → fem×t",
+  "gabarito": "A",
+  "alternativas": {
+    "a": "+3,0 V (0-6s) reto, 0 (6-8s), -1,5 V (8-10s), sem quebra em t=5s",
+    "b": "quebra em t=5s indo a -3,0 V, depois 0, depois -1,5 V",
+    "c": "quebra em t=5s, depois -1,5 V constante até o fim, não retorna a zero",
+    "d": "sinais invertidos do gabarito, começando em -3,0 V",
+    "e": "quebra em t=5s subindo, depois desce a zero, depois +1,5 V"
+  },
+  "validacao": {"tipo": "conceitual", "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 1", "subtitulo": "EsPCEx 2022 · leitura de gráfico",
+     "narracao": "Primeira questão de prova, EsPCEx de dois mil e vinte e dois. Uma espira de cobre está totalmente imersa num campo magnético variável, e o gráfico mostra o fluxo magnético na espira ao longo do tempo. Qual gráfico representa a força eletromotriz induzida ao longo do tempo?"},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "segmento", "x1": -3.3, "y1": 0, "x2": 3.3, "y2": 0, "cor": "giz"},
+       {"tipo": "segmento", "x1": -3, "y1": -0.9, "x2": -3, "y2": 2.5, "cor": "giz"},
+       {"tipo": "segmento", "x1": -3, "y1": 2.25, "x2": 0.6, "y2": -0.45, "cor": "destaque"},
+       {"tipo": "segmento", "x1": 0.6, "y1": -0.45, "x2": 1.8, "y2": -0.45, "cor": "destaque"},
+       {"tipo": "segmento", "x1": 1.8, "y1": -0.45, "x2": 3, "y2": 0, "cor": "destaque"},
+       {"tipo": "texto", "x": -3.5, "y": 2.8, "texto": "Φ (Wb)", "cor": "giz", "tamanho": 20},
+       {"tipo": "texto", "x": 3.5, "y": -0.2, "texto": "t (s)", "cor": "giz", "tamanho": 20},
+       {"tipo": "texto", "x": -3.65, "y": 2.25, "texto": "15", "cor": "apoio", "tamanho": 20},
+       {"tipo": "texto", "x": -3.7, "y": -0.45, "texto": "-3", "cor": "apoio", "tamanho": 20},
+       {"tipo": "texto", "x": 0.6, "y": -0.7, "texto": "6", "cor": "apoio", "tamanho": 20},
+       {"tipo": "texto", "x": 1.8, "y": -0.7, "texto": "8", "cor": "apoio", "tamanho": 20},
+       {"tipo": "texto", "x": 3, "y": -0.7, "texto": "10", "cor": "apoio", "tamanho": 20}
+     ],
+     "narracao": "Este é o gráfico de fluxo por tempo. De zero a seis segundos, uma reta indo de quinze weber até menos três weber, passando por zero exatamente em cinco segundos. De seis a oito segundos, o fluxo fica constante em menos três weber. E de oito a dez segundos, uma reta subindo de volta até zero."},
+
+    {"acao": "escrever", "latex": "\\Phi \\times t \\text{ linear} \\Rightarrow \\mathcal{E} = -\\dfrac{d\\Phi}{dt} \\text{ constante por trecho}",
+     "destaque": true, "nota": "ideia-chave",
+     "narracao": "A ideia chave é esta. Como o gráfico é linear por partes, a derivada do fluxo, e portanto a fem induzida, é constante em cada trecho, igual à inclinação daquele trecho com o sinal trocado. Basta calcular a inclinação de cada pedaço reto."},
+
+    {"acao": "escrever", "latex": "\\text{trecho 1, } 0 \\text{ a } 6\\text{s} \\;\\Rightarrow\\; \\dfrac{\\Delta\\Phi}{\\Delta t} = \\dfrac{-3-15}{6-0} = -3{,}0",
+     "nota": "cuidado, não há quebra em t=5s",
+     "narracao": "No primeiro trecho está a armadilha da questão. Muita gente vê a reta cruzando o zero em cinco segundos e acha que existe uma quebra ali. Mas é a mesma reta, com a mesma inclinação, do início ao fim do trecho, o cruzamento pelo zero é só um ponto dela. A inclinação vale menos três weber por segundo."},
+
+    {"acao": "escrever", "latex": "\\mathcal{E}_1 = -(-3{,}0) = +3{,}0\\text{ V}", "destaque": true,
+     "narracao": "Trocando o sinal, a fem nesse trecho inteiro, de zero a seis segundos, vale mais três vírgula zero volts, constante."},
+
+    {"acao": "escrever", "latex": "\\text{trecho 2, } 6 \\text{ a } 8\\text{s} \\;\\Rightarrow\\; \\Phi \\text{ constante} \\;\\Rightarrow\\; \\mathcal{E}_2 = 0",
+     "narracao": "No segundo trecho o fluxo fica constante em menos três weber. Fluxo constante significa derivada nula, então a fem nesse intervalo é exatamente zero."},
+
+    {"acao": "escrever", "latex": "\\text{trecho 3, } 8 \\text{ a } 10\\text{s} \\;\\Rightarrow\\; \\dfrac{\\Delta\\Phi}{\\Delta t} = \\dfrac{0-(-3)}{10-8} = +1{,}5 \\;\\Rightarrow\\; \\mathcal{E}_3 = -1{,}5\\text{ V}",
+     "destaque": true,
+     "narracao": "No terceiro trecho, o fluxo sobe de menos três para zero em dois segundos, inclinação mais um vírgula cinco weber por segundo. Trocando o sinal, a fem vale menos um vírgula cinco volts."},
+
+    {"acao": "esboco",
+     "elementos": [
+       {"tipo": "segmento", "x1": -3.3, "y1": 0, "x2": 3.3, "y2": 0, "cor": "giz"},
+       {"tipo": "segmento", "x1": -3, "y1": -1, "x2": -3, "y2": 1.8, "cor": "giz"},
+       {"tipo": "segmento", "x1": -3, "y1": 1.5, "x2": 0.6, "y2": 1.5, "cor": "destaque"},
+       {"tipo": "segmento", "x1": 0.6, "y1": 1.5, "x2": 0.6, "y2": 0, "cor": "destaque"},
+       {"tipo": "segmento", "x1": 0.6, "y1": 0, "x2": 1.8, "y2": 0, "cor": "destaque"},
+       {"tipo": "segmento", "x1": 1.8, "y1": 0, "x2": 1.8, "y2": -0.75, "cor": "destaque"},
+       {"tipo": "segmento", "x1": 1.8, "y1": -0.75, "x2": 3, "y2": -0.75, "cor": "destaque"},
+       {"tipo": "texto", "x": -3.5, "y": 2.1, "texto": "E (V)", "cor": "giz", "tamanho": 20},
+       {"tipo": "texto", "x": 3.5, "y": -0.2, "texto": "t (s)", "cor": "giz", "tamanho": 20},
+       {"tipo": "texto", "x": -3.7, "y": 1.5, "texto": "+3,0", "cor": "apoio", "tamanho": 20},
+       {"tipo": "texto", "x": -3.7, "y": -0.75, "texto": "-1,5", "cor": "apoio", "tamanho": 20}
+     ],
+     "narracao": "E o gráfico final fica em três degraus. Mais três volts do início até seis segundos, cai para zero entre seis e oito segundos, e depois vai para menos um vírgula cinco volts até o fim, sem nenhuma quebra em cinco segundos."},
+
+    {"acao": "resposta", "latex": "\\mathcal{E}: +3{,}0\\text{V} \\to 0 \\to -1{,}5\\text{V}", "alternativa": "a",
+     "narracao": "Esse é exatamente o gráfico da alternativa á."}
+  ]
+}

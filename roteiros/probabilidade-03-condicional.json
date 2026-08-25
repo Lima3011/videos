@@ -1,0 +1,31 @@
+{
+  "id": "probabilidade-03-condicional",
+  "banca": "GERAL", "ano": 2026, "ordem": 3,
+  "assunto": "Probabilidade", "sub": "probabilidade condicional e eventos independentes",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Probabilidade condicional", "subtitulo": "quando uma informação encolhe o espaço amostral",
+     "narracao": "Agora o tipo de questão que mais derruba candidato. Quando o enunciado já entrega uma informação extra, e pede a probabilidade sabendo disso."},
+
+    {"acao": "escrever", "latex": "P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}", "destaque": true,
+     "nota": "lê-se “probabilidade de A dado B”",
+     "narracao": "A probabilidade de A, dado que B já aconteceu, é a probabilidade dos dois juntos, dividida pela probabilidade de B. Lê-se probabilidade de A dado B."},
+
+    {"acao": "escrever", "latex": "\\text{“sabendo que...”, “dado que...”, “se...”}",
+     "nota": "são a senha da condicional",
+     "narracao": "Sempre que a questão disser sabendo que, dado que, ou se aconteceu isso, é sinal de probabilidade condicional. A informação extra reduz o espaço amostral, você para de olhar para todos os casos e passa a olhar só para os casos onde B é verdade."},
+
+    {"acao": "escrever", "latex": "\\text{o novo espaço amostral é o próprio } B",
+     "destaque": true,
+     "narracao": "Na prática, a forma mais rápida de resolver é essa. Em vez de aplicar a fórmula direto, redesenhe o espaço amostral considerando só os casos em que B aconteceu, e conte a fração dentro dele. É exatamente assim que vamos resolver a questão dos dois dados daqui a pouco."},
+
+    {"acao": "escrever", "latex": "A \\text{ e } B \\text{ independentes} \\;\\Leftrightarrow\\; P(A \\cap B) = P(A)\\cdot P(B)",
+     "destaque": true, "nota": "eventos que não se afetam",
+     "narracao": "Um caso particular importante é quando os eventos são independentes, ou seja, um não interfere no outro. Nesse caso, a probabilidade dos dois juntos é simplesmente o produto das probabilidades separadas. Dois lançamentos de moeda, duas pessoas sorteadas em listas diferentes, cada rodada de um jogo, são exemplos clássicos de independência."},
+
+    {"acao": "escrever", "latex": "P(A \\mid B) = P(A) \\;\\Leftrightarrow\\; \\text{independentes}",
+     "narracao": "E tem um teste rápido para saber se são independentes. Se saber que B aconteceu não muda em nada a chance de A, eles são independentes. Se muda, são dependentes, e você precisa da fórmula da condicional."}
+  ]
+}

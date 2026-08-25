@@ -1,0 +1,29 @@
+{
+  "id": "probabilidade-02-classica",
+  "banca": "GERAL", "ano": 2026, "ordem": 2,
+  "assunto": "Probabilidade", "sub": "probabilidade clássica — casos favoráveis sobre possíveis",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Probabilidade clássica", "subtitulo": "casos favoráveis sobre casos possíveis",
+     "narracao": "A definição mais básica, e a que resolve a maioria das questões de prova militar sozinha."},
+
+    {"acao": "escrever", "latex": "P(A) = \\frac{n(A)}{n(\\Omega)}", "destaque": true,
+     "nota": "resultados igualmente prováveis",
+     "narracao": "A probabilidade de um evento A é o número de casos favoráveis a A, dividido pelo número total de casos possíveis. Isso só vale quando todo resultado do espaço amostral tem a mesma chance de acontecer, moeda honesta, dado não viciado, sorteio justo."},
+
+    {"acao": "escrever", "latex": "\\text{dado honesto: } P(\\text{tirar 5}) = \\frac{1}{6}",
+     "narracao": "Um dado de seis faces, cada número tem a mesma chance. Um caso favorável, o cinco, sobre seis casos possíveis."},
+
+    {"acao": "escrever", "latex": "0 \\le P(A) \\le 1", "nota": "probabilidade nunca é negativa nem passa de 1",
+     "narracao": "A probabilidade está sempre entre zero e um. Zero é impossível, um é certeza. Se sua conta der um número fora desse intervalo, tem erro na modelagem."},
+
+    {"acao": "escrever", "latex": "\\text{“sair par” num dado} \\;\\to\\; \\{2,4,6\\} \\;\\to\\; \\frac{3}{6} = \\frac{1}{2}",
+     "narracao": "Um exemplo com evento composto. Sair um número par no dado. Os casos favoráveis são dois, quatro e seis, três casos, sobre os seis possíveis, dá um meio."},
+
+    {"acao": "escrever", "latex": "\\text{contar casos} \\;\\to\\; \\text{combinatória}",
+     "destaque": true,
+     "narracao": "E na prática, contar casos favoráveis e possíveis é combinatória disfarçada. Quando o enunciado tem sorteio, comissão ou fila, geralmente é combinação ou permutação por trás. A conta de probabilidade em si é sempre essa fração simples, o trabalho pesado é contar direito o numerador e o denominador."}
+  ]
+}

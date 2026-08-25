@@ -1,0 +1,68 @@
+{
+  "id": "catalan-caminhos-n4",
+  "banca": "ORIGINAL",
+  "ano": 2026,
+  "ordem": 1,
+  "assunto": "Combinatória",
+  "sub": "caminhos em grade sem cruzar a diagonal (números de Catalan)",
+  "gabarito": "A",
+  "alternativas": {"a": "14", "b": "20", "c": "70", "d": "8"},
+
+  "validacao": {
+    "tipo": "expressao",
+    "expr": "factorial(8) / (factorial(4) * factorial(4) * 5)",
+    "esperado": 14,
+    "alternativa_calculada": "a"
+  },
+
+  "passos": [
+    {"acao": "titulo", "texto": "Caminhos em grade sem cruzar a diagonal",
+     "subtitulo": "Combinatória · números de Catalan",
+     "narracao": "Vamos resolver um problema clássico de contagem, caminhos numa grade sem cruzar a diagonal, os números de Catalan."},
+
+    {"acao": "enunciado",
+     "texto": "Uma pessoa parte do ponto (0,0) e caminha até (4,4), movendo-se sempre uma unidade para a direita ou uma unidade para cima, sem nunca passar estritamente acima da diagonal y = x (ou seja, em todo instante, y ≤ x). Quantos caminhos distintos existem?",
+     "alternativas": "a) 14      b) 20      c) 70      d) 8",
+     "narracao": "Uma pessoa parte do ponto zero, zero e caminha até quatro, quatro, movendo-se sempre uma unidade para a direita ou uma unidade para cima, sem nunca passar estritamente acima da diagonal y igual a x. Quantos caminhos distintos existem? As alternativas são estas. Opção á, catorze. Opção b, vinte. Opção c, setenta. Opção d, oito."},
+
+    {"acao": "escrever", "latex": "\\text{8 passos: 4 direita + 4 cima, em qualquer ordem}",
+     "narracao": "Sem nenhuma restrição, cada caminho tem oito passos, sendo quatro para a direita e quatro para cima, em qualquer ordem."},
+
+    {"acao": "escrever", "latex": "\\text{total} = \\binom{8}{4} = 70",
+     "narracao": "O total de sequências possíveis, sem a restrição da diagonal, é a combinação de oito, quatro a quatro, que dá setenta."},
+
+    {"acao": "grade", "n": 4, "diagonal": true, "sombrear": "acima",
+     "caminho": ["D", "D", "C", "D", "C", "C", "D", "C"],
+     "narracao": "Mas nem todos esses setenta caminhos respeitam a regra. Os que entram na região sombreada cruzam para cima da diagonal, e precisamos descontar exatamente esses."},
+
+    {"acao": "grade", "colunas": 4, "linhas": 5, "diagonal": true,
+     "linha_extra_desloc": 1,
+     "caminhos": [
+       {"passos": ["D", "C", "C", "D", "C", "D", "C", "D"], "cor": "giz"},
+       {"passos": ["D", "C", "C", "C", "D", "C", "D", "C"], "cor": "destaque", "tracejado": true}
+     ],
+     "pontos": [{"i": 1, "j": 2, "rotulo": "P"}],
+     "narracao": "Aqui está um exemplo de caminho ruim, que sobe demais e toca a reta tracejada y igual a x mais um, exatamente no ponto P. Refletindo o resto do caminho a partir de P em relação a essa reta, chegamos ao caminho tracejado, que termina no ponto n menos um, n mais um. Essa troca é uma bijeção perfeita entre os caminhos ruins e os caminhos até esse ponto."},
+
+    {"acao": "escrever",
+     "latex": "\\text{caminho ruim} \\;\\longleftrightarrow\\; \\text{caminho até } (n{-}1,\\,n{+}1)",
+     "destaque": true, "nota": "bijeção por simetria",
+     "narracao": "Essa reflexão troca cada passo pra direita por um passo pra cima dali em diante, criando uma correspondência exata, uma bijeção, entre cada caminho ruim e um caminho até o ponto n menos um, n mais um, sem nenhuma restrição."},
+
+    {"acao": "escrever", "latex": "\\text{caminhos ruins} = \\binom{2n}{n-1}",
+     "narracao": "Como essa correspondência é perfeita, o número de caminhos ruins é igual ao número de caminhos irrestritos até esse ponto, que é a combinação de dois n, n menos um."},
+
+    {"acao": "transformar", "latex": "\\binom{8}{3} = 56", "operacao": "n = 4",
+     "narracao": "Substituindo n por quatro, o número de caminhos ruins é a combinação de oito, três, que dá cinquenta e seis."},
+
+    {"acao": "escrever", "latex": "\\text{caminhos bons} = 70 - 56",
+     "narracao": "Os caminhos bons são os que sobram depois de descontar os ruins, setenta menos cinquenta e seis."},
+
+    {"acao": "escrever", "latex": "C_n = \\frac{1}{n+1}\\binom{2n}{n}",
+     "destaque": true, "nota": "número de Catalan",
+     "narracao": "Essa mesma conta, feita para um n qualquer, é exatamente a fórmula do número de Catalan, um sobre n mais um, vezes a combinação de dois n, n."},
+
+    {"acao": "resposta", "latex": "C_4 = 14", "alternativa": "a",
+     "narracao": "O resultado é catorze. Alternativa á."}
+  ]
+}

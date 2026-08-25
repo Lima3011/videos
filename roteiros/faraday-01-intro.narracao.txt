@@ -1,0 +1,21 @@
+# Narração — faraday-01-intro
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Como uma usina hidrelétrica transforma a queda de água em energia elétrica? No fundo, tudo o que ela faz é girar uma turbina. Não existe fábrica de elétrons escondida lá dentro. Existe só um ímã girando perto de um monte de fios enrolados. E é exatamente aí que mora uma das ideias mais bonitas de toda a física.
+
+[2] Um campo magnético que varia no tempo produz um campo elétrico, capaz de empurrar cargas e gerar corrente. Essa é a essência da Lei de Faraday, a lei por trás de geradores, transformadores, freios magnéticos e até carregadores sem fio de celular.
+
+[3] A história começa em mil oitocentos e vinte. Durante uma aula, o físico dinamarquês Hans Christian Érsted percebeu, quase por acaso, que a agulha de uma bússola se desviava sempre que uma corrente passava por um fio próximo. Primeira prova de que corrente elétrica gera campo magnético.
+
+[4] Pouco depois, o francês André Marie Ampère formalizou matematicamente essa descoberta, mostrando como calcular o campo criado por uma corrente. Ampère deu ao fenômeno o rigor que faltava.
+
+[5] Se corrente gera campo magnético, será que o caminho inverso também é possível? Essa foi a pergunta que obcecou o inglês Michael Faraday por anos. Ele não tinha formação matemática formal, era essencialmente um experimentalista genial, mas sua intuição física era incomparável.
+
+[6] Em mil oitocentos e trinta e um, Faraday aproximava e afastava um ímã de uma bobina ligada a um instrumento sensível. Enquanto o ímã se movia, surgia corrente. Quando ele ficava parado, por mais forte que fosse o campo, nenhuma corrente aparecia.
+
+[7] Esse foi o insight decisivo, e é o fio condutor de toda essa aula. Não é o campo magnético em si que gera corrente, mas sim a sua variação no tempo. Um campo constante, por mais intenso que seja, é eletricamente mudo. Só a mudança fala.
+
+[8] Décadas depois, o escocês James Clerk Maxwell reuniu essas descobertas num conjunto compacto de quatro equações, que descrevem completamente os campos elétrico e magnético. A lei de Faraday é uma delas, e foi essencial para prever que a luz é uma onda eletromagnética.
+
+[9] O plano de voo é este. Primeiro o fluxo magnético, a grandeza que mede quanto campo atravessa um circuito. Depois a Lei de Faraday e a Lei de Lenz, incluindo o porquê do sinal negativo. Em seguida, conservação de energia e aplicações do dia a dia. E para fechar, duas questões de nível de prova militar, uma de leitura de gráfico e uma do clássico problema da barra sobre trilhos.
+

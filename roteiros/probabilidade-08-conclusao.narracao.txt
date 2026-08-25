@@ -1,0 +1,17 @@
+# Narração — probabilidade-08-conclusao
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] As três questões, de níveis bem diferentes, foram resolvidas com as mesmas quatro perguntas.
+
+[2] Se o enunciado tem sabendo que ou dado que, encolha o espaço amostral, é condicional. Se tem pelo menos um, quase sempre é mais rápido calcular o complementar. Se os eventos não se afetam, multiplique as probabilidades. E se nada disso se aplica, volte para a definição mais simples, casos favoráveis sobre casos possíveis.
+
+[3] Na primeira questão, o pulo do gato foi enxergar que contar múltiplos de doze entre os divisores de trezentos e sessenta era o mesmo que contar os divisores de trinta.
+
+[4] Na segunda, a condicional encolheu o espaço amostral de trinta e seis pares para dezoito, porque o dado azul já estava travado em três valores possíveis.
+
+[5] E na terceira, durar mais que três rodadas virou o complementar de todas as quatro moedas terem sumido, cada uma de forma independente, até a rodada três.
+
+[6] Se você leva uma frase desse vídeo para a prova, leve esta. Não confie na sensação, desenhe o espaço amostral, e conte direito.
+
+[7] Se esse formato ajudou, comenta qual assunto você quer ver resolvido assim no próximo vídeo. Até a próxima.
+

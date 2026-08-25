@@ -1,0 +1,21 @@
+# Narração — probabilidade-05-q1-espcex
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Primeira questão, EsPCEx de dois mil e treze. Uma mistura de probabilidade clássica com o assunto de divisores.
+
+[2] Se escolhermos, ao acaso, um elemento do conjunto dos divisores inteiros positivos do número trezentos e sessenta, a probabilidade desse elemento ser múltiplo de doze é. Opção a, um vinte e quatro avos. Opção b, um oitavo. Opção c, um terço. Opção d, um meio. Opção e, dois terços.
+
+[3] É probabilidade clássica pura, casos favoráveis sobre casos possíveis. O espaço amostral aqui é o conjunto dos divisores de trezentos e sessenta, e o evento favorável são os divisores que também são múltiplos de doze.
+
+[4] Fatorando trezentos e sessenta em primos, dois ao cubo, vezes três ao quadrado, vezes cinco.
+
+[5] O total de divisores, somando um em cada expoente e multiplicando, dá vinte e quatro. Esse é o denominador.
+
+[6] Agora o truque para contar o numerador sem listar tudo na mão. Doze é dois ao quadrado vezes três. Todo divisor de trezentos e sessenta que é múltiplo de doze pode ser escrito como doze vezes k. E para doze k dividir trezentos e sessenta, k precisa dividir trezentos e sessenta sobre doze, que é trinta.
+
+[7] Ou seja, contar os múltiplos de doze que dividem trezentos e sessenta é o mesmo que contar os divisores de trinta, que é dois vezes três vezes cinco. Um mais um, vezes um mais um, vezes um mais um, dá oito.
+
+[8] Oito casos favoráveis sobre vinte e quatro possíveis, simplificando, dá um terço.
+
+[9] Um terço. Alternativa C.
+

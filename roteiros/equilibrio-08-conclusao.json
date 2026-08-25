@@ -1,0 +1,41 @@
+{
+  "id": "equilibrio-08-conclusao",
+  "banca": "GERAL", "ano": 2026, "ordem": 8,
+  "assunto": "Equilíbrio químico", "sub": "conclusão — o método em quatro passos",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "O método", "subtitulo": "o que fazer em qualquer questão de equilíbrio",
+     "narracao": "Repare que as três questões, de bancas e níveis diferentes, seguiram o mesmo caminho."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["passo", "o que fazer"],
+     "linhas": [
+       ["1", "escrever a equação balanceada"],
+       ["2", "montar a expressão de Kc"],
+       ["3", "montar a tabela ICE com x"],
+       ["4", "conferir o sentido com Le Chatelier"]
+     ],
+     "destacar_coluna": 1,
+     "narracao": "Escrever a equação balanceada. Montar a expressão da constante, lembrando de deixar sólido e líquido puros de fora. Montar a tabela de início, reage e equilíbrio, com o x multiplicado pelo coeficiente. E conferir o sentido do deslocamento pelo princípio de Le Chatelier."},
+
+    {"acao": "escrever", "latex": "\\text{sólido e líquido puros} \\;\\to\\; \\text{fora do } K_c",
+     "destaque": true, "nota": "armadilha da questão 1",
+     "narracao": "As três armadilhas que apareceram valem uma revisão. Na primeira questão, o carbonato de cálcio sólido não entrava na constante, e por isso mexer nele não deslocava nada."},
+
+    {"acao": "escrever", "latex": "\\Delta H < 0 \\;\\Rightarrow\\; \\text{aquecer desloca para a ESQUERDA}",
+     "destaque": true, "nota": "armadilha da questão 2",
+     "narracao": "Na segunda, a entalpia negativa dizia que a ida libera calor, então aquecer favorecia a volta, e o lado com mais mols de gás só era favorecido descomprimindo."},
+
+    {"acao": "escrever", "latex": "\\Delta n = 0 \\;\\Rightarrow\\; P_{\\text{total}} \\ \\text{constante},\\quad K_p = K_c",
+     "destaque": true, "nota": "armadilha da questão 3",
+     "narracao": "E na terceira, a variação de mols igual a zero garantia que a pressão total continuava a mesma, o que liberava a conta inteira e ainda fazia K p e K c coincidirem."},
+
+    {"acao": "escrever", "latex": "K_c \\ \\text{só muda com a temperatura}",
+     "narracao": "Se você levar uma única frase desse vídeo para a prova, leve esta. A constante só muda com a temperatura. Concentração, pressão e catalisador mudam as concentrações, mas nunca o valor da constante."},
+
+    {"acao": "escrever", "latex": "\\text{No Alvo}",
+     "narracao": "Se esse formato te ajudou, deixe seu comentário dizendo qual assunto você quer ver resolvido assim na próxima. Até o próximo vídeo."}
+  ]
+}

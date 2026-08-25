@@ -1,0 +1,54 @@
+{
+  "id": "equilibrio-06-q2-marinha",
+  "banca": "Marinha", "ano": 2017, "ordem": 6,
+  "assunto": "Equilíbrio químico", "sub": "efeito conjunto de temperatura e pressão",
+  "gabarito": "A",
+  "alternativas": {
+    "a": "temperatura aumenta e compressão diminui",
+    "b": "temperatura aumenta e compressão aumenta",
+    "c": "temperatura diminui e compressão aumenta",
+    "d": "temperatura constante e compressão aumenta",
+    "e": "temperatura diminui e compressão constante"
+  },
+  "validacao": {"tipo": "conceitual", "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 2", "subtitulo": "Marinha 2017 · nível médio",
+     "narracao": "Segunda questão, prova da Marinha de dois mil e dezessete. Agora com dois fatores agindo ao mesmo tempo."},
+
+    {"acao": "enunciado",
+     "texto": "Analise a seguinte reação: 2NO2(g) <=> N2O4(g), com ΔH = -57,2 kJ/mol. Na reação acima, o equilíbrio se desloca para a esquerda quando, considerando conjuntamente os efeitos da compressão e da temperatura sobre o sistema:",
+     "alternativas": "a) T sobe, compressão cai   b) T sobe, compressão sobe   c) T cai, compressão sobe   d) T constante, compressão sobe   e) T cai, compressão constante",
+     "narracao": "Analise a reação. Dois dióxidos de nitrogênio formando um tetróxido de dinitrogênio, com variação de entalpia de menos cinquenta e sete vírgula dois quilojoules por mol. O equilíbrio se desloca para a esquerda quando, considerando conjuntamente os efeitos da compressão e da temperatura. Opção a, temperatura aumenta e compressão diminui. Opção b, as duas aumentam. Opção c, temperatura diminui e compressão aumenta. Opção d, temperatura constante e compressão aumenta. Opção e, temperatura diminui e compressão constante."},
+
+    {"acao": "escrever",
+     "latex": "2\\,\\mathrm{NO_2}(g) \\;\\rightleftharpoons\\; \\mathrm{N_2O_4}(g) \\qquad \\Delta H = -57{,}2\\ \\mathrm{kJ/mol}",
+     "narracao": "O enunciado dá duas informações escondidas na equação, e a questão inteira sai delas. Vamos separar uma de cada vez."},
+
+    {"acao": "escrever", "latex": "\\text{esquerda} = 2 \\text{ mols de gás} \\qquad \\text{direita} = 1 \\text{ mol de gás}",
+     "destaque": true, "nota": "primeira informação",
+     "narracao": "A primeira é a contagem de mols de gás. Do lado esquerdo temos dois mols, do lado direito apenas um. Ou seja, o lado esquerdo é o lado que ocupa mais volume."},
+
+    {"acao": "escrever", "latex": "\\Delta H < 0 \\;\\Rightarrow\\; \\text{direta exotérmica},\\ \\text{inversa endotérmica}",
+     "destaque": true, "nota": "segunda informação",
+     "narracao": "A segunda é o sinal da entalpia. Negativo quer dizer que o caminho de ida libera calor, então o caminho de volta, o que a questão quer, é o que absorve calor."},
+
+    {"acao": "escrever", "latex": "\\text{queremos deslocar} \\;\\leftarrow\\; \\text{(para a esquerda)}",
+     "narracao": "Agora é só perguntar, o que empurra o sistema para a esquerda? Precisamos que os dois fatores apontem para esse mesmo lado."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["fator", "para ir para a esquerda"],
+     "linhas": [
+       ["temperatura", "AUMENTAR (lado endotérmico)"],
+       ["compressão", "DIMINUIR (lado com mais gás)"]
+     ],
+     "destacar_coluna": 1,
+     "narracao": "Pela temperatura, como a volta é endotérmica, aquecer favorece a volta. Então a temperatura tem que aumentar. Pela pressão, o lado esquerdo tem mais mols de gás, e o sistema só vai para lá se tiver espaço, ou seja, se a compressão diminuir. Descomprimir é aumentar o volume."},
+
+    {"acao": "escrever", "latex": "\\uparrow T \\quad \\text{e} \\quad \\downarrow \\text{compressão}", "destaque": true,
+     "narracao": "Temperatura para cima e compressão para baixo. Repare que as outras alternativas sempre têm pelo menos um dos dois fatores empurrando para a direita, o que estragaria o deslocamento pedido."},
+
+    {"acao": "resposta", "latex": "\\uparrow T,\\ \\downarrow \\text{compressão}", "alternativa": "a",
+     "narracao": "A temperatura aumenta e a compressão diminui. Alternativa A."}
+  ]
+}

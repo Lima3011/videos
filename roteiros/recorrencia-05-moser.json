@@ -1,0 +1,58 @@
+{
+  "id": "recorrencia-05-moser",
+  "banca": "GERAL", "ano": 2026, "ordem": 5, "assunto": "Recorrência", "sub": "círculos de Moser",
+  "passos": [
+    {"acao": "titulo", "texto": "Problema 3", "subtitulo": "os círculos de Moser",
+     "narracao": "Terceiro problema, bem diferente dos outros dois."},
+
+    {"acao": "enunciado",
+     "texto": "Marque n pontos na borda de um círculo, e trace todas as retas ligando cada par de pontos. Em quantas regiões isso divide o círculo?",
+     "narracao": "Marque n pontos na borda de um círculo, e trace todas as retas ligando cada par de pontos. Em quantas regiões isso divide o círculo?"},
+
+    {"acao": "regioes_circulo",
+     "sequencia": [
+       {"n": 2, "regioes": "2 regiões"},
+       {"n": 3, "regioes": "4 regiões"},
+       {"n": 4, "regioes": "8 regiões"},
+       {"n": 5, "regioes": "16 regiões"}
+     ],
+     "narracao": "Com dois pontos, uma reta, duas regiões. Com três pontos, um triângulo dentro do círculo, quatro regiões. Com quatro pontos, oito regiões. Com cinco pontos, dezesseis regiões."},
+
+    {"acao": "escrever", "latex": "2,\\ 4,\\ 8,\\ 16,\\ \\ldots \\;\\Rightarrow\\; 2^{n-1} \\text{?}", "destaque": true,
+     "narracao": "Dois, quatro, oito, dezesseis. Parece óbvio, dois elevado a n menos um. É tentador acreditar que essa fórmula vale sempre."},
+
+    {"acao": "regioes_circulo",
+     "sequencia": [{"n": 6, "regioes": "31 regiões (não 32!)"}],
+     "fixar": true,
+     "narracao": "Mas com seis pontos, contando com cuidado, o resultado é trinta e uma regiões. Não trinta e duas. O padrão quebra exatamente aqui."},
+
+    {"acao": "escrever", "latex": "\\text{vamos deduzir a fórmula certa, sem chutar}", "destaque": true,
+     "narracao": "Então vamos deduzir a fórmula certa de verdade, em vez de chutar um padrão. Pra isso, precisamos de uma ferramenta mais forte, a fórmula de Euler para grafos planares."},
+
+    {"acao": "escrever", "latex": "V - E + F = 2",
+     "nota": "fórmula de Euler, vale pra qualquer desenho conectado no plano",
+     "narracao": "Ela diz que, em qualquer desenho conectado no plano, número de vértices menos número de arestas mais número de faces é sempre igual a dois. Vamos contar os três."},
+
+    {"acao": "escrever", "latex": "V = n + \\binom{n}{4}",
+     "nota": "pontos na borda + cruzamentos internos",
+     "narracao": "Os vértices são os n pontos na borda, mais os pontos onde as cordas se cruzam por dentro. Repare, cada grupo de quatro pontos entre os n sempre gera exatamente um cruzamento, o das duas diagonais do quadrilátero que esses quatro pontos formam. Por isso o número de cruzamentos é a combinação de n quatro a quatro."},
+
+    {"acao": "escrever", "latex": "E = n + \\binom{n}{2} + 2\\binom{n}{4}",
+     "nota": "arcos da borda + cordas + cortes extras",
+     "narracao": "As arestas são os n arcos da borda do círculo, mais a combinação de n dois a dois cordas, mais dois cortes extras pra cada cruzamento, porque cada cruzamento corta duas cordas ao mesmo tempo."},
+
+    {"acao": "escrever", "latex": "F = 2 - V + E = 1 + \\binom{n}{2} + \\binom{n}{4}",
+     "narracao": "Substituindo os dois na fórmula de Euler e isolando F, o número de faces, incluindo a região de fora do círculo, fica um, mais a combinação de n dois a dois, mais a combinação de n quatro a quatro."},
+
+    {"acao": "escrever", "latex": "\\text{regiões internas} = F - 1 = \\binom{n}{4} + \\binom{n}{2} + 1",
+     "destaque": true, "nota": "agora sim, deduzida de verdade",
+     "narracao": "Uma dessas faces é a região de fora do círculo, que não conta pro nosso problema, então subtraímos um. E chegamos exatamente na mesma fórmula de antes, só que agora deduzida direito, não chutada."},
+
+    {"acao": "escrever", "latex": "\\binom{6}{4} + \\binom{6}{2} + 1 = 15 + 15 + 1 = 31",
+     "nota": "confere com o desenho!",
+     "narracao": "Vamos conferir com n igual a seis. A combinação de seis quatro a quatro é quinze. A combinação de seis dois a dois também é quinze. Quinze mais quinze mais um dá trinta e um, exatamente o número de regiões que contamos no desenho."},
+
+    {"acao": "escrever", "latex": "\\text{alguns casos parecidos NÃO são uma prova}", "destaque": true,
+     "narracao": "Esse problema é um alerta importante em matemática. Só porque os primeiros casos seguem um padrão bonito, isso não significa que a fórmula está provada. É preciso de fato demonstrar a regra, não só observar alguns exemplos."}
+  ]
+}

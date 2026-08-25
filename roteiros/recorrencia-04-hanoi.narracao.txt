@@ -1,0 +1,21 @@
+# Narração — recorrencia-04-hanoi
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Segundo problema, um clássico, a torre de Hanói.
+
+[2] Três pinos, e n discos de tamanhos diferentes empilhados no primeiro pino, do maior embaixo pro menor em cima. A regra, cada movimento leva um disco de um pino pra outro, e nunca dá pra colocar um disco maior em cima de um disco menor. O objetivo é levar a torre inteira pro terceiro pino.
+
+[3] Veja a solução em ação. Repare a estratégia, pra mover os n discos, primeiro tira-se os n menos um discos de cima do caminho, movendo eles pro pino do meio. Depois, move-se o disco maior, sozinho, direto pro pino final. E por fim, os n menos um discos voltam a se empilhar em cima dele.
+
+[4] Traduzindo em fórmula, T de n, o número mínimo de movimentos, é duas vezes T de n menos um, mais um. Duas vezes porque os n menos um discos menores precisam ser resolvidos duas vezes, uma pra sair do caminho, outra pra se reempilhar. E mais um, pelo movimento único do disco maior.
+
+[5] Um truque comum pra resolver esse tipo de recorrência, somar um dos dois lados. Assim, T de n mais um vira exatamente o dobro de T de n menos um mais um.
+
+[6] Falta só o caso base pra fechar a conta. Com um disco só, basta um movimento. Então T de um mais um vale dois.
+
+[7] Como T de n mais um começa em dois, e dobra a cada passo, depois de n menos um duplicações ele vale dois vezes dois elevado a n menos um, ou seja, dois elevado a n. Isolando T de n, chegamos na fórmula fechada, dois elevado a n, menos um.
+
+[8] Vale a pena conferir com a animação que acabamos de ver. Com quatro discos, a fórmula dá dois elevado a quatro, menos um, quinze movimentos. Se você contar os movimentos da simulação, é exatamente esse o total.
+
+[9] Pra vinte discos, seriam mais de um milhão de movimentos. Uma lenda diz que monges resolvendo essa torre com sessenta e quatro discos, um movimento por segundo, levariam mais tempo do que a idade do universo.
+

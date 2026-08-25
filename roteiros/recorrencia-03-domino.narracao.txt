@@ -1,0 +1,27 @@
+# Narração — recorrencia-03-domino
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Primeiro problema.
+
+[2] De quantos jeitos dá pra cobrir um tabuleiro dois por n usando só peças de dominó, um por dois, sem sobrepor e sem deixar buraco?
+
+[3] Vamos chamar de f de n esse número de jeitos.
+
+[4] Para n igual a um, só existe um jeito, uma peça vertical.
+
+[5] Para n igual a dois, existem dois jeitos, duas peças verticais lado a lado, ou duas peças horizontais empilhadas. É esta segunda opção que estou mostrando aqui.
+
+[6] Para n igual a três, existem três jeitos possíveis. Aqui está um deles, uma vertical seguida de duas horizontais empilhadas.
+
+[7] Resumindo o que contamos na mão até aqui, f de um é um, f de dois é dois, f de três é três.
+
+[8] Agora vem o truque. Em vez de contar cada caso na mão, olhe só para a última coluna do tabuleiro. Só existem duas possibilidades para ela.
+
+[9] Primeira possibilidade, a última coluna é coberta por uma peça vertical. Nesse caso, sobra um tabuleiro dois por n menos um pra cobrir, e isso pode ser feito de f de n menos um jeitos.
+
+[10] Segunda possibilidade, as duas últimas colunas são cobertas por duas peças horizontais empilhadas. Nesse caso, sobra um tabuleiro dois por n menos dois, que pode ser coberto de f de n menos dois jeitos.
+
+[11] Como esses dois casos nunca se sobrepõem, o total é a soma dos dois. f de n é f de n menos um mais f de n menos dois. A mesma regra de Fibonacci, escondida dentro de um problema que parecia não ter nada a ver.
+
+[12] E a recorrência realmente funciona na prática. Partindo de f de um igual a um e f de dois igual a dois, que a gente já contou na mão, dá pra construir o resto direto. f de três é f de dois mais f de um, três, que bate com o que contamos. f de quatro é f de três mais f de dois, cinco. f de cinco é oito. f de seis é treze. Repare, um, dois, três, cinco, oito, treze, são exatamente os números de Fibonacci, só começando um passo à frente.
+

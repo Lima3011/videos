@@ -1,0 +1,35 @@
+{
+  "id": "equilibrio-01-intro",
+  "banca": "GERAL", "ano": 2026, "ordem": 1,
+  "assunto": "Equilíbrio químico", "sub": "introdução — equilíbrio é dinâmico",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "Equilíbrio químico", "subtitulo": "a reação que nunca termina",
+     "narracao": "Existe um tipo de reação que simplesmente não termina. Você espera, espera, e ela para de mudar sem ter consumido os reagentes. Hoje vamos entender por que isso acontece, e como as bancas militares cobram exatamente esse ponto."},
+
+    {"acao": "escrever", "latex": "2\\,\\mathrm{NO_2}(g) \\;\\rightleftharpoons\\; \\mathrm{N_2O_4}(g)",
+     "narracao": "O exemplo clássico é este. Dióxido de nitrogênio, um gás castanho, se juntando dois a dois para formar tetróxido de dinitrogênio, que é incolor. Numa ampola fechada, a cor escurece ou clareia até certo ponto e depois trava."},
+
+    {"acao": "escrever", "latex": "\\text{a cor para de mudar} \\;\\neq\\; \\text{a reação parou}",
+     "destaque": true, "nota": "cuidado com essa armadilha",
+     "narracao": "E aqui mora o primeiro erro de quem está começando. A cor parar de mudar não significa que a reação parou. Ela continua acontecendo, nos dois sentidos, o tempo todo."},
+
+    {"acao": "grafico",
+     "funcoes": [
+       {"expr": "0.4 + 0.6*exp(-1.5*x)", "rotulo": "v_{direta}"},
+       {"expr": "0.4 - 0.4*exp(-1.5*x)", "rotulo": "v_{inversa}"}
+     ],
+     "dominio": [0, 4], "imagem": [0, 1.1],
+     "legenda": "velocidade das duas reações ao longo do tempo",
+     "narracao": "Olhe as duas velocidades. No começo só existe reagente, então a reação direta é rápida e a inversa é zero. Conforme o produto aparece, a direta desacelera e a inversa acelera. O equilíbrio é o instante em que as duas se encontram e passam a andar juntas."},
+
+    {"acao": "escrever", "latex": "v_{\\text{direta}} = v_{\\text{inversa}}", "destaque": true,
+     "nota": "definição de equilíbrio",
+     "narracao": "Essa é a definição. Equilíbrio químico é quando a velocidade da reação direta iguala a velocidade da reação inversa. Como o que é formado é reposto na mesma taxa, as concentrações ficam constantes, mas nunca iguais entre si, e o sistema continua reagindo por baixo dos panos."},
+
+    {"acao": "escrever", "latex": "\\text{constante } K_c \\;\\to\\; \\text{tabela ICE} \\;\\to\\; \\text{Le Chatelier}",
+     "narracao": "O plano de voo é este. Primeiro a constante de equilíbrio, depois a tabela que resolve praticamente qualquer conta desse assunto, depois o princípio que diz para onde o equilíbrio anda quando você mexe nele. E aí três questões de prova militar, uma fácil, uma média e uma da primeira fase do ITA."}
+  ]
+}

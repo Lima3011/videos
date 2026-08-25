@@ -1,0 +1,15 @@
+# Narração — equilibrio-04-lechatelier
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Falta responder a pergunta que as bancas mais gostam. Se eu cutucar o sistema, para que lado ele vai?
+
+[2] A resposta mais honesta vem do quociente de reação. É a mesma conta da constante, mas usando as concentrações do momento, mesmo que o sistema ainda não esteja em equilíbrio.
+
+[3] Se o quociente está menor que a constante, falta produto, então a reação caminha para a direita até alcançar a constante. Se está maior, sobra produto, e ela volta para a esquerda. Se são iguais, o sistema já chegou.
+
+[4] O princípio de Le Chatelier é a versão rápida disso. Toda perturbação é respondida no sentido que a alivia. Se você joga mais reagente, o sistema consome reagente. Se você comprime, ele encolhe.
+
+[5] Vale a pena decorar esta tabela. Adicionar reagente empurra para os produtos. Aumentar a pressão, o que é o mesmo que comprimir, empurra para o lado que tem menos mols de gás, porque assim o sistema ocupa menos espaço. Aumentar a temperatura empurra para o lado endotérmico, o lado que absorve calor. E o catalisador não desloca nada, ele só faz o sistema chegar mais rápido no mesmo equilíbrio.
+
+[6] E preste atenção na coluna da direita da tabela. Só a temperatura muda o valor da constante. Se a reação direta libera calor, ou seja, tem variação de entalpia negativa, então aquecer favorece o caminho de volta. Guarde isso, porque é exatamente a pegadinha da segunda questão.
+

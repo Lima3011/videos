@@ -1,0 +1,66 @@
+{
+  "id": "equilibrio-07-q3-ita",
+  "banca": "ITA", "ano": 2016, "ordem": 7,
+  "assunto": "Equilíbrio químico", "sub": "constante a partir de pressões parciais (tabela ICE)",
+  "gabarito": "B",
+  "alternativas": {"a": "0,295", "b": "0,350", "c": "0,490", "d": "0,590", "e": "0,700"},
+  "validacao": {
+    "tipo": "expressao",
+    "expr": "(228/386)**2",
+    "esperado": "12996/37249",
+    "alternativa_calculada": "b"
+  },
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 3", "subtitulo": "ITA 2016, 1ª fase · nível difícil",
+     "narracao": "Terceira questão, primeira fase do ITA de dois mil e dezesseis. Aqui a tabela que montamos na teoria vai trabalhar."},
+
+    {"acao": "enunciado",
+     "texto": "Quantidades iguais de H2(g) e I2(g) foram colocadas em um frasco, com todo o sistema à temperatura T, resultando na pressão total de 1 bar. Verificou-se que houve a produção de HI(g), cuja pressão parcial foi de 22,8 kPa. Assinale a alternativa que apresenta o valor que mais se aproxima do valor CORRETO da constante de equilíbrio desta reação.",
+     "alternativas": "a) 0,295      b) 0,350      c) 0,490      d) 0,590      e) 0,700",
+     "narracao": "Quantidades iguais de hidrogênio e de iodo foram colocadas em um frasco, à temperatura T, resultando na pressão total de um bar. Verificou-se que houve produção de iodeto de hidrogênio, cuja pressão parcial foi de vinte e dois vírgula oito quilopascals. Assinale o valor mais próximo da constante de equilíbrio. Opção a, zero vírgula duzentos e noventa e cinco. Opção b, zero vírgula trezentos e cinquenta. Opção c, zero vírgula quatrocentos e noventa. Opção d, zero vírgula quinhentos e noventa. Opção e, zero vírgula setecentos."},
+
+    {"acao": "escrever", "latex": "\\mathrm{H_2}(g) + \\mathrm{I_2}(g) \\;\\rightleftharpoons\\; 2\\,\\mathrm{HI}(g)",
+     "narracao": "A reação é a formação do iodeto de hidrogênio. Um hidrogênio mais um iodo formando dois iodetos de hidrogênio."},
+
+    {"acao": "escrever", "latex": "1\\ \\mathrm{bar} = 100\\ \\mathrm{kPa}", "nota": "unidades primeiro",
+     "narracao": "Primeiro, unidades. A pressão total é dada em bar e a parcial em quilopascal. Um bar são cem quilopascals, então vamos trabalhar tudo em quilopascal."},
+
+    {"acao": "escrever", "latex": "\\Delta n = 2 - (1+1) = 0", "destaque": true,
+     "nota": "a chave da questão",
+     "narracao": "Agora a chave da questão. Conte os mols de gás dos dois lados. Dois de um lado, dois do outro. A variação é zero, ou seja, o número total de partículas de gás não muda enquanto a reação acontece."},
+
+    {"acao": "escrever", "latex": "\\Delta n = 0 \\;\\Rightarrow\\; P_{\\text{total}} = 100\\ \\mathrm{kPa} \\ \\text{o tempo todo}",
+     "narracao": "E se o número de partículas não muda, num frasco de volume fixo e temperatura fixa, a pressão total também não muda. Ela continua valendo cem quilopascals no equilíbrio. Sem essa observação a questão não sai."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["", "H2", "I2", "HI"],
+     "linhas": [
+       ["início", "p", "p", "0"],
+       ["reage", "-y", "-y", "+2y"],
+       ["equilíbrio", "p-y", "p-y", "22,8"]
+     ],
+     "destacar_coluna": 3,
+     "narracao": "Montando a tabela em pressões parciais. As quantidades iniciais são iguais, então começamos com a mesma pressão p para os dois reagentes. No equilíbrio, o produto vale vinte e dois vírgula oito, que é o dado do enunciado."},
+
+    {"acao": "escrever", "latex": "p_{\\mathrm{H_2}} + p_{\\mathrm{I_2}} = 100 - 22{,}8 = 77{,}2",
+     "narracao": "Como a soma de todas as pressões parciais é a pressão total, o que sobra para os dois reagentes juntos é cem menos vinte e dois vírgula oito, ou seja, setenta e sete vírgula dois."},
+
+    {"acao": "escrever", "latex": "p_{\\mathrm{H_2}} = p_{\\mathrm{I_2}} = \\frac{77{,}2}{2} = 38{,}6\\ \\mathrm{kPa}",
+     "destaque": true,
+     "narracao": "E como eles começaram iguais e consomem exatamente na mesma proporção, permanecem iguais no equilíbrio. Cada um vale a metade, trinta e oito vírgula seis quilopascals."},
+
+    {"acao": "escrever", "latex": "K = \\frac{(p_{\\mathrm{HI}})^{2}}{p_{\\mathrm{H_2}} \\cdot p_{\\mathrm{I_2}}} = \\frac{(22{,}8)^{2}}{(38{,}6)^{2}}",
+     "narracao": "Agora é só aplicar a constante. Produto ao quadrado em cima, produto dos reagentes embaixo. E repare que embaixo os dois fatores são iguais, então dá para escrever como um quadrado também."},
+
+    {"acao": "transformar", "latex": "K = \\left(\\frac{22{,}8}{38{,}6}\\right)^{2} = (0{,}5907)^{2}",
+     "operacao": "quadrado do quociente",
+     "narracao": "Fazendo a divisão primeiro, e só depois elevando ao quadrado, a conta fica muito mais leve. Vinte e dois vírgula oito dividido por trinta e oito vírgula seis dá aproximadamente zero vírgula cinquenta e nove."},
+
+    {"acao": "escrever", "latex": "K \\approx 0{,}349", "nota": "grandeza sem unidade",
+     "narracao": "Elevando ao quadrado, chegamos em zero vírgula trezentos e quarenta e nove. E como a variação de mols é zero, essa constante não tem unidade, e o valor de K p e de K c coincidem aqui."},
+
+    {"acao": "resposta", "latex": "K \\approx 0{,}350", "alternativa": "b",
+     "narracao": "O valor mais próximo entre as opções é zero vírgula trezentos e cinquenta. Alternativa B."}
+  ]
+}

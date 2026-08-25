@@ -1,0 +1,50 @@
+{
+  "id": "probabilidade-07-q3-ita",
+  "banca": "ITA", "ano": 2023, "ordem": 7,
+  "assunto": "Probabilidade", "sub": "complementar + independência (moedas removidas por rodada)",
+  "gabarito": "B",
+  "alternativas": {"a": "1341/4096", "b": "1695/4096", "c": "2049/4096", "d": "2401/4096", "e": "2755/4096"},
+  "validacao": {
+    "tipo": "expressao",
+    "expr": "1 - (7/8)**4",
+    "esperado": "1695/4096",
+    "alternativa_calculada": "b"
+  },
+
+  "passos": [
+    {"acao": "titulo", "texto": "Questão 3", "subtitulo": "ITA 2023, 1ª fase · nível difícil",
+     "narracao": "Terceira questão, primeira fase do ITA de dois mil e vinte e três. Aqui o evento complementar vira o herói da resolução."},
+
+    {"acao": "enunciado",
+     "texto": "Um conjunto de moedas é lançado sucessivas vezes. Em cada lançamento, todas as moedas que resultam em coroa, e apenas estas, são retiradas. As demais moedas permanecem para o próximo lançamento. O jogo termina quando todas as moedas tiverem sido retiradas. A probabilidade de o jogo durar mais do que três rodadas, se for iniciado com quatro moedas, é:",
+     "alternativas": "a) 1341/4096   b) 1695/4096   c) 2049/4096   d) 2401/4096   e) 2755/4096",
+     "narracao": "Um conjunto de moedas é lançado sucessivas vezes. Em cada lançamento, todas as moedas que resultam em coroa são retiradas. As demais permanecem para o próximo lançamento. O jogo termina quando todas as moedas forem retiradas. A probabilidade do jogo durar mais que três rodadas, começando com quatro moedas, é uma destas cinco frações sobre quatro mil e noventa e seis."},
+
+    {"acao": "escrever", "latex": "\\text{“mais que 3 rodadas”} \\Rightarrow \\text{sobra} \\ge 1 \\text{ moeda}",
+     "destaque": true, "nota": "traduzindo o enunciado",
+     "narracao": "Primeiro, traduzir o que a pergunta realmente quer. O jogo durar mais que três rodadas significa que, depois da terceira rodada, ainda sobra pelo menos uma moeda em jogo. Se todas tivessem sumido até a rodada três, o jogo já teria acabado ali."},
+
+    {"acao": "escrever", "latex": "\\text{“pelo menos uma moeda sobra”} \\;\\Rightarrow\\; \\text{use o COMPLEMENTAR}",
+     "destaque": true, "nota": "gatilho da teoria",
+     "narracao": "Pelo menos uma sobrar é exatamente o gatilho que vimos na teoria. Em vez de calcular direto, calculamos o complementar, a probabilidade de TODAS as quatro moedas já terem sumido até a rodada três, e subtraímos de um."},
+
+    {"acao": "escrever", "latex": "\\text{1 moeda sobreviver 3 rodadas} \\;\\Rightarrow\\; \\text{cara, cara, cara}",
+     "narracao": "Olhe para uma moeda só. Ela é retirada assim que der coroa. Para ela ainda estar em jogo depois de três rodadas, ela precisa ter dado cara nas três vezes."},
+
+    {"acao": "escrever", "latex": "P(\\text{1 moeda sair até a rodada 3}) = 1 - \\left(\\frac{1}{2}\\right)^{3} = \\frac{7}{8}",
+     "narracao": "A chance de dar cara três vezes seguidas é um meio ao cubo, um oitavo. Usando o complementar de novo, a chance dessa moeda JÁ TER SIDO retirada até a rodada três é um menos um oitavo, sete oitavos."},
+
+    {"acao": "escrever", "latex": "\\text{4 moedas independentes} \\;\\Rightarrow\\; P(\\text{todas saírem}) = \\left(\\frac{7}{8}\\right)^{4}",
+     "destaque": true, "nota": "independência",
+     "narracao": "Como as quatro moedas são independentes entre si, a chance de TODAS as quatro já terem sido retiradas até a rodada três é sete oitavos, multiplicado por ele mesmo quatro vezes."},
+
+    {"acao": "transformar", "latex": "\\left(\\frac{7}{8}\\right)^{4} = \\frac{2401}{4096}", "operacao": "7^4=2401, 8^4=4096",
+     "narracao": "Sete elevado a quatro dá dois mil quatrocentos e um. Oito elevado a quatro dá quatro mil e noventa e seis."},
+
+    {"acao": "escrever", "latex": "P(\\text{dura mais que 3}) = 1 - \\frac{2401}{4096} = \\frac{4096-2401}{4096}",
+     "narracao": "Voltando ao complementar de novo, a resposta da questão é um menos essa fração."},
+
+    {"acao": "resposta", "latex": "P = \\frac{1695}{4096}", "alternativa": "b",
+     "narracao": "Mil seiscentos e noventa e cinco, quatro mil e noventa e seis avos. Alternativa B."}
+  ]
+}

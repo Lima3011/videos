@@ -1,0 +1,21 @@
+# Narração — faraday-02-fluxo-e-lei
+# Leia cada bloco na ordem; grave um trecho por bloco.
+
+[1] Antes de falar em indução, precisamos de uma grandeza que meça quanto campo magnético atravessa um circuito. Essa grandeza é o fluxo magnético, e ela é a verdadeira protagonista de toda essa história.
+
+[2] Para um campo magnético uniforme atravessando uma superfície plana de área A, com a normal fazendo um ângulo teta com o campo, o fluxo vale B vezes A vezes cosseno de teta. A unidade no sistema internacional é o weber.
+
+[3] Pense no fluxo como a quantidade de linhas de campo atravessando o circuito. A reta horizontal representa o plano do circuito visto de lado, o vetor normal sai perpendicular a esse plano, e teta é o ângulo entre essa normal e o campo B.
+
+[4] O fluxo pode mudar por três motivos, e é importante ter isso muito claro. O módulo do campo pode mudar, como quando um ímã se aproxima. A área do circuito pode mudar, como quando uma barra desliza sobre trilhos. E o ângulo pode mudar, como quando o circuito gira, igual acontece dentro de um gerador.
+
+[5] Aqui vai um alerta importante. Muita gente, na hora da prova, só lembra que o fluxo muda quando o campo muda. Mas em vários problemas, principalmente o da barra sobre trilhos, o campo é constante. Quem varia é a área da espira. É o mesmo fenômeno, só que disfarçado.
+
+[6] E por que um campo constante não gera corrente? Porque gerar corrente custa energia, e não existe fonte de energia nenhuma numa situação em que nada se move. Uma carga só sente força de um campo magnético quando está em movimento, ou quando existe um campo elétrico induzido. Parado, o campo simplesmente não tem como empurrar as cargas livres.
+
+[7] Só quando o fluxo varia é que aparece uma força eletromotriz induzida, representada pela letra E maiúscula. Essa é a Lei de Faraday-Lenz. A força eletromotriz induzida é igual a menos a taxa de variação do fluxo magnético no tempo, e ela se comporta como uma pilha temporária, medida em volts.
+
+[8] O sinal negativo não é um detalhe decorativo, ele carrega dentro de si a Lei de Lenz. Se o fluxo está aumentando, a corrente induzida cria seu próprio campo contrário a esse aumento, tentando segurar o fluxo. Se o fluxo está diminuindo, a corrente tenta reforçá-lo. O sistema sempre reage contra a mudança que está sofrendo.
+
+[9] E por que a natureza insiste em resistir à variação? Porque isso é, na verdade, uma manifestação da conservação de energia. Se a corrente induzida favorecesse a variação de fluxo em vez de se opor a ela, o sistema entraria num ciclo de retroalimentação positiva, gerando energia do nada, um moto contínuo. Como isso é proibido pela física, a natureza é obrigada a fazer o contrário, resistir à mudança, consumindo energia externa no processo.
+

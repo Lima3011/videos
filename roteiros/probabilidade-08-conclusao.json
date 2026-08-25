@@ -1,0 +1,41 @@
+{
+  "id": "probabilidade-08-conclusao",
+  "banca": "GERAL", "ano": 2026, "ordem": 8,
+  "assunto": "Probabilidade", "sub": "conclusão — o método em quatro passos",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "O método", "subtitulo": "o que fazer em qualquer questão de probabilidade",
+     "narracao": "As três questões, de níveis bem diferentes, foram resolvidas com as mesmas quatro perguntas."},
+
+    {"acao": "tabela_dados",
+     "cabecalho": ["pergunta", "o que fazer"],
+     "linhas": [
+       ["tem 'sabendo que'?", "encolher p/ condicional"],
+       ["tem 'pelo menos'?", "usar o complementar"],
+       ["são independentes?", "multiplicar"],
+       ["senão", "casos favoraveis / possiveis"]
+     ],
+     "destacar_coluna": 1,
+     "narracao": "Se o enunciado tem sabendo que ou dado que, encolha o espaço amostral, é condicional. Se tem pelo menos um, quase sempre é mais rápido calcular o complementar. Se os eventos não se afetam, multiplique as probabilidades. E se nada disso se aplica, volte para a definição mais simples, casos favoráveis sobre casos possíveis."},
+
+    {"acao": "escrever", "latex": "n(\\Omega)=24,\\ \\ d=12k \\Rightarrow k\\mid 30 \\Rightarrow n(A)=8",
+     "destaque": true, "nota": "armadilha da questão 1",
+     "narracao": "Na primeira questão, o pulo do gato foi enxergar que contar múltiplos de doze entre os divisores de trezentos e sessenta era o mesmo que contar os divisores de trinta."},
+
+    {"acao": "escrever", "latex": "\\text{“sabendo que...”} \\Rightarrow \\text{novo } \\Omega \\text{ com } 3\\times 6=18",
+     "destaque": true, "nota": "armadilha da questão 2",
+     "narracao": "Na segunda, a condicional encolheu o espaço amostral de trinta e seis pares para dezoito, porque o dado azul já estava travado em três valores possíveis."},
+
+    {"acao": "escrever", "latex": "\\text{“mais que 3 rodadas”} \\Rightarrow 1-\\left(\\frac{7}{8}\\right)^{4}",
+     "destaque": true, "nota": "armadilha da questão 3",
+     "narracao": "E na terceira, durar mais que três rodadas virou o complementar de todas as quatro moedas terem sumido, cada uma de forma independente, até a rodada três."},
+
+    {"acao": "escrever", "latex": "\\text{intuição sente} \\;\\ne\\; \\text{espaço amostral conta}",
+     "narracao": "Se você leva uma frase desse vídeo para a prova, leve esta. Não confie na sensação, desenhe o espaço amostral, e conte direito."},
+
+    {"acao": "escrever", "latex": "\\text{No Alvo}",
+     "narracao": "Se esse formato ajudou, comenta qual assunto você quer ver resolvido assim no próximo vídeo. Até a próxima."}
+  ]
+}

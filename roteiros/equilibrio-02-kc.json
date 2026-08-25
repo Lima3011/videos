@@ -1,0 +1,36 @@
+{
+  "id": "equilibrio-02-kc",
+  "banca": "GERAL", "ano": 2026, "ordem": 2,
+  "assunto": "Equilíbrio químico", "sub": "constante de equilíbrio Kc",
+  "gabarito": "A", "alternativas": {"a": "-"},
+  "validacao": {"tipo": "expressao", "expr": "1", "esperado": 1, "alternativa_calculada": "a"},
+
+  "passos": [
+    {"acao": "titulo", "texto": "A constante de equilíbrio", "subtitulo": "lei da ação das massas",
+     "narracao": "Se as concentrações travam num certo valor, dá para transformar esse valor num número. Esse número é a constante de equilíbrio."},
+
+    {"acao": "escrever", "latex": "a\\,A + b\\,B \\;\\rightleftharpoons\\; c\\,C + d\\,D",
+     "narracao": "Para uma reação genérica, com coeficientes a, b, c e d."},
+
+    {"acao": "escrever", "latex": "K_c = \\frac{[C]^{c}\\,[D]^{d}}{[A]^{a}\\,[B]^{b}}",
+     "destaque": true, "nota": "produtos sobre reagentes",
+     "narracao": "A constante é produtos sobre reagentes, cada concentração elevada ao próprio coeficiente da equação balanceada. Produto em cima, reagente embaixo, expoente igual ao coeficiente. Se você trocar em cima por embaixo, cai numa alternativa errada que a banca sempre coloca."},
+
+    {"acao": "escrever", "latex": "\\mathrm{N_2}(g) + 3\\,\\mathrm{H_2}(g) \\rightleftharpoons 2\\,\\mathrm{NH_3}(g)",
+     "narracao": "Na síntese da amônia, por exemplo, um nitrogênio mais três hidrogênios formando duas amônias."},
+
+    {"acao": "transformar", "latex": "K_c = \\frac{[\\mathrm{NH_3}]^{2}}{[\\mathrm{N_2}]\\,[\\mathrm{H_2}]^{3}}",
+     "operacao": "coeficientes viram expoentes",
+     "narracao": "A constante fica amônia ao quadrado, em cima, dividida por nitrogênio vezes hidrogênio ao cubo, embaixo. Os coeficientes dois e três viraram os expoentes."},
+
+    {"acao": "escrever", "latex": "\\text{sólido puro e líquido puro} \\;\\to\\; \\text{fora do } K_c",
+     "destaque": true, "nota": "concentração deles é constante",
+     "narracao": "Agora a regra que decide muita questão. Sólido puro e líquido puro não entram na expressão. A concentração deles não muda enquanto eles existirem, então já está embutida no valor da constante. Só entram gases e substâncias dissolvidas."},
+
+    {"acao": "escrever", "latex": "K_c \\text{ só muda com a TEMPERATURA}", "destaque": true,
+     "narracao": "E a segunda regra de ouro. O valor da constante só depende da temperatura. Adicionar reagente, mexer na pressão, usar catalisador, nada disso altera a constante. Muda as concentrações, mas o quociente entre elas volta para o mesmo número."},
+
+    {"acao": "escrever", "latex": "K_c \\gg 1 \\;\\Rightarrow\\; \\text{muito produto} \\qquad K_c \\ll 1 \\;\\Rightarrow\\; \\text{pouco produto}",
+     "narracao": "Por fim, o significado do tamanho dela. Constante muito maior que um quer dizer equilíbrio deslocado para os produtos, ou seja, bom rendimento. Constante muito menor que um quer dizer que quase nada se converteu."}
+  ]
+}
