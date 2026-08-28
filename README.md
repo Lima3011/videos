@@ -1,8 +1,8 @@
-# No Alvo — vídeos de resolução de questões
+# Pipeline de vídeo-aula — resolução animada de questões
 
-Pipeline que transforma a foto (ou PDF/texto/LaTeX) de uma questão de concurso
-militar num vídeo de resolução: quadro didático animado em Manim, na paleta
-visual "No Alvo" (preto + dourado + branco), com narração gerada localmente
+Pipeline que transforma a foto (ou PDF/texto/LaTeX) de uma questão num vídeo de
+resolução: quadro didático animado em Manim, em paleta preto + dourado +
+branco, com narração gerada localmente
 por TTS (Coqui XTTS-v2) — sem depender de nenhuma API paga. Além de escrever
 fórmulas, o motor sabe desenhar 13 tipos de diagrama (gráfico, geometria,
 círculo trigonométrico, plano complexo, vetores, sólidos 3D, etc.) e 3
